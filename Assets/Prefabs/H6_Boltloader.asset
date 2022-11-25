@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80a5643b11eacd439df2aa7abfed434, type: 3}
+  m_Name: H6_Boltloader
+  m_EditorClassIdentifier: 
+  weaponTypes: 6
+  itemName: "H6\uBCFC\uD2B8\uB85C\uB354"
+  itemType: 0
+  itemImage: {fileID: 21300000, guid: 695c2ddf42629fc4e958fd4b16485705, type: 3}
+  itemPrefab: {fileID: 6852271197670506533, guid: 774e3c813f4f8e547bc9da7412bc3766, type: 3}
+  DropItemCount: 1
+  Value: 250
+  Explain: "\uBBFC\uAC04\uC6A9 \uCD1D\uAE30\uD68C\uC0AC '\uCE90\uCE58\uD544\uB4DC'\uC0AC\uC758
+    \uC0AC\uB0E5\uC6A9 \n\uC18C\uCD1D. \uC544\uC6C3\uB79C\uB4DC\uC5D0\uC11C \uAC00\uC7A5
+    \uD754\uD788 \uBCFC \uC218 \n\uC788\uB294 \uBCFC\uD2B8\uC561\uC158 \uCD1D\uC774\uB2E4.
+    \n(.308\uAD6C\uACBD \uD0C4\uD658)"
+  HPEffect: 0
+  TPEffect: 0
+  MoveSpeedEfeect: 0

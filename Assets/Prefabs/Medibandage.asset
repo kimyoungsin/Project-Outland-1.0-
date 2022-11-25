@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80a5643b11eacd439df2aa7abfed434, type: 3}
+  m_Name: Medibandage
+  m_EditorClassIdentifier: 
+  weaponTypes: 0
+  itemName: "\uBA54\uB514\uBC34\uB4DC"
+  itemType: 0
+  itemImage: {fileID: 0}
+  itemPrefab: {fileID: 0}
+  DropItemCount: 1
+  Value: 25
+  Explain: 
+  HPEffect: 30
+  TPEffect: 0
+  MoveSpeedEfeect: 0

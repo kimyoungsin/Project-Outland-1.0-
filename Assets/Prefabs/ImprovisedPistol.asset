@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80a5643b11eacd439df2aa7abfed434, type: 3}
+  m_Name: ImprovisedPistol
+  m_EditorClassIdentifier: 
+  weaponTypes: 5
+  itemName: "\uAE09\uC870\uAD8C\uCD1D"
+  itemType: 0
+  itemImage: {fileID: 21300000, guid: ef00a83e87dfe5d4ea50f1a73ed73fdb, type: 3}
+  itemPrefab: {fileID: 4225240846090116211, guid: 8dfa371884d47eb4f8d185e7958352ed, type: 3}
+  DropItemCount: 1
+  Value: 100
+  Explain: "\uC885\uB9D0 \uD6C4 \uC544\uC6C3\uB79C\uB4DC\uC5D0\uC11C \uCD1D\uAE30\uB958\uC758
+    \uACF5\uAE09\uC774 \n\uC904\uC5B4\uB4E4\uC790 \uB9CC\uB4E4\uC5B4\uC9C4 \uC218\uC81C\uCD1D\uAE30.\n(.40\uAD6C\uACBD
+    \uD0C4\uD658)"
+  HPEffect: 0
+  TPEffect: 0
+  MoveSpeedEfeect: 0

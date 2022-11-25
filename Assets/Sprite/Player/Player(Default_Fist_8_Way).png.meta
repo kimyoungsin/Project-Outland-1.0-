@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: 229d4d6e0d70ddc4d923575bcf29694e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 123
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6929b82f14b6dc34fa739a6468690166
+      internalID: 388408266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 123
+        width: 13
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79c0f4721164554db0a88728ef9d200
+      internalID: 322203735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 123
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f7497b6bf1818478e875ef398041ea
+      internalID: 212659441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 123
+        width: 13
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792c9e71d6174ef4ab6caee7125360c9
+      internalID: 211475077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 123
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d162f5620a90b40a32111a15292e8f
+      internalID: 82218691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_5
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 123
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddaa3517b9b50c41ad6148c71f42311
+      internalID: 1090103145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 123
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fcd8001f37ef9941b4d063af6e530a0
+      internalID: 1038723107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_7
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 123
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d061111481d0942a3c2bc8cfd02f68
+      internalID: 1204807295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 84
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197a9cd2c95fa1d44935af45556f9490
+      internalID: -295622320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_9
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 83
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fda329f956e89d4b9dcc6bd60f81ba2
+      internalID: 48602096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 84
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd81bbfd7bdbea4aa9f3268362d2488
+      internalID: 528531002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 83
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d663d86d2fc0f4fb24a31ec6f530db
+      internalID: -706486899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 83
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4530b002ec2eb5547a6bd2159c85ebba
+      internalID: -1314181592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 83
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68140f668b6f7141ae895d18b6aeba6
+      internalID: -1663373179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_14
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 83
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c939577ada7e14bb9c783796f7fcc3
+      internalID: -484604322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 83
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e7199166371b342bd43f9942c4648e
+      internalID: -660542007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 44
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171ba9715ff8fd1419a520258b5a193e
+      internalID: 2082258013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_17
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 44
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8360f3681c06b0c458b1fbe9d83c4ee9
+      internalID: -1668205619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_18
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 44
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77eea183f7c0a24586457931a582431
+      internalID: 1153622565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 44
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77ebcdee5302c44aa52d09867b7c7cd
+      internalID: -187381336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 44
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796a7c9253b910841ac3523e2588b5a9
+      internalID: 1659033897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_21
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 44
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3caea91c385544a97c02504b7bfd4c
+      internalID: 1103646735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_22
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 44
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a35184ee90a3c9449955beea02eee0d
+      internalID: -542737231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_23
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 44
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f36356d1ee51d742bf2ad97ca9e9846
+      internalID: -1108857081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5501f7626841af84489faba491766778
+      internalID: -2070854854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_25
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 4
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47485b6235fc73c47b0fe442b4929f4d
+      internalID: 27024903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_26
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc26766b5312018419a765426f8cd470
+      internalID: 1982268593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_27
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 4
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3aa2f4634e16d488fba22954a12046
+      internalID: 1575866228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_28
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 4
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed38ce4961773f341a03fb258bba780d
+      internalID: -2090172987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_29
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 4
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328d1bcce8a5dcd449ff42477e28f9b1
+      internalID: -602913334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_30
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 4
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61600493130a4848bc1097626e8b487
+      internalID: -1001674618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(Default_Fist_8_Way)_31
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 4
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfed56dc2082be4a9ca069ae1453a62
+      internalID: 2133540352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Player(Default_Fist_8_Way)_6: 1038723107
+      Player(Default_Fist_8_Way)_4: 82218691
+      Player(Default_Fist_8_Way)_10: 528531002
+      Player(Default_Fist_8_Way)_15: -660542007
+      Player(Default_Fist_8_Way)_14: -484604322
+      Player(Default_Fist_8_Way)_0: 388408266
+      Player(Default_Fist_8_Way)_13: -1663373179
+      Player(Default_Fist_8_Way)_17: -1668205619
+      Player(Default_Fist_8_Way)_8: -295622320
+      Player(Default_Fist_8_Way)_16: 2082258013
+      Player(Default_Fist_8_Way)_2: 212659441
+      Player(Default_Fist_8_Way)_21: 1103646735
+      Player(Default_Fist_8_Way)_12: -1314181592
+      Player(Default_Fist_8_Way)_19: -187381336
+      Player(Default_Fist_8_Way)_5: 1090103145
+      Player(Default_Fist_8_Way)_3: 211475077
+      Player(Default_Fist_8_Way)_26: 1982268593
+      Player(Default_Fist_8_Way)_25: 27024903
+      Player(Default_Fist_8_Way)_24: -2070854854
+      Player(Default_Fist_8_Way)_28: -2090172987
+      Player(Default_Fist_8_Way)_30: -1001674618
+      Player(Default_Fist_8_Way)_22: -542737231
+      Player(Default_Fist_8_Way)_7: 1204807295
+      Player(Default_Fist_8_Way)_20: 1659033897
+      Player(Default_Fist_8_Way)_27: 1575866228
+      Player(Default_Fist_8_Way)_9: 48602096
+      Player(Default_Fist_8_Way)_1: 322203735
+      Player(Default_Fist_8_Way)_29: -602913334
+      Player(Default_Fist_8_Way)_11: -706486899
+      Player(Default_Fist_8_Way)_18: 1153622565
+      Player(Default_Fist_8_Way)_31: 2133540352
+      Player(Default_Fist_8_Way)_23: -1108857081
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

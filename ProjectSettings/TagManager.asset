@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Door
+  - NPC
+  - Enemy
+  - DialogueNPC
+  - Bullet
+  - Die
+  - WeaponImage
+  - Item
+  - ItemExplainUI
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Object
+  - NPC
+  - PlayerLayer
+  - ItemLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Structure
+    uniqueID: 1010042359
+    locked: 0
+  - name: Objects
+    uniqueID: 1493502489
+    locked: 0
+  - name: NPC
+    uniqueID: 2177490935
+    locked: 0
+  - name: Weapons
+    uniqueID: 3593104829
+    locked: 0
+  - name: PlayerLayer
+    uniqueID: 4044367583
+    locked: 0
