@@ -17,14 +17,15 @@ public class Player : MonoBehaviour
 
     public int PreviousMapNum;
     static public Player instance;
+    public string Player_HitSound;
 
-
+    SpriteRenderer spriteRenderer;
 
 
     // Start is called before the first frame update
     void Awake()
     {
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
         if (instance == null)
         {
             DontDestroyOnLoad(this.gameObject);
@@ -74,6 +75,8 @@ public class Player : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Enemy"))
             {
+                SoundManager.SharedInstance.PlaySE(Player_HitSound);
+                spriteRenderer.color = new Color(1, 1, 1, 0.5f);
                 hp -= 6;
                 invincible = true;
                 Invoke("invincibleoff", invincibletime);
@@ -84,7 +87,22 @@ public class Player : MonoBehaviour
 
     void invincibleoff()
     {
+        spriteRenderer.color = new Color(1, 1, 1, 1f);
         invincible = false;
+    }
+
+    public void Hit(int Damage)
+    {
+        if(invincible == false)
+        {
+            SoundManager.SharedInstance.PlaySE(Player_HitSound);
+            spriteRenderer.color = new Color(1, 1, 1, 0.5f);
+            hp -= Damage;
+            invincible = true;
+            Invoke("invincibleoff", invincibletime);
+
+        }
+
     }
 
 

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DialogueData : MonoBehaviour
 {
     private UIText UItext;
+    public Item_Reward ItemReward;
 
     public Text DialogueTextObj;
     public Text DialogueNameTextObj;
@@ -132,6 +133,12 @@ public class DialogueData : MonoBehaviour
                 UItext.DialogueStopMove();
                 UItext.DialogueEnd();
                 Count = 0;
+            }
+            else if (DialogueEvent == "æ∆¿Ã≈€")
+            {
+                ItemReward = GameObject.FindGameObjectWithTag("DialogueNPC").GetComponent<Item_Reward>();
+                ItemReward.RewardPay();
+                Count += 1;
             }
             else 
             {

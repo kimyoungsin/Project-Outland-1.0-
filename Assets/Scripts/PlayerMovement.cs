@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rigid;
     public Animator Anim;
-
+    
     [SerializeField]
     private Inventory theInventory;
 

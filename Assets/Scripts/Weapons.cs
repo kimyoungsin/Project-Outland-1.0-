@@ -302,7 +302,11 @@ public class Weapons : MonoBehaviour
     {
         theInventory.UseBullet(BulletType, Round - MaxRound);
         theInventory.CheckBullet(BulletType);
-        Round = theInventory.BulletCountReturn(MaxRound);
+        Round += theInventory.BulletCountReturn(MaxRound);
+        if(Round >= MaxRound)
+        {           
+            Round = MaxRound;
+        }
         Reloading = false;
     }
 }

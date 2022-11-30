@@ -65,3 +65,6 @@ TagManager:
   - name: PlayerLayer
     uniqueID: 4044367583
     locked: 0
+  - name: FrontObjects
+    uniqueID: 2003566265
+    locked: 0

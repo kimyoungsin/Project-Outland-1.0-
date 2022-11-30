@@ -154,8 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ffb7dd461299d6409800b61d1d16095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurSceneNum: 3
-  NextSceneNum: 2
+  CurSceneNum: 4
+  NextSceneNum: 3
   SceneName: "\uC0CC\uB4E4\uB9AC"
 --- !u!61 &149315032
 BoxCollider2D:
@@ -2643,7 +2643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ccea3ef8585934b9749ee29192dc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Startmappos: 2
+  Startmappos: 3
 --- !u!4 &1427027313
 Transform:
   m_ObjectHideFlags: 0
