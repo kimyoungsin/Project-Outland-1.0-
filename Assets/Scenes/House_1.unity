@@ -1503,7 +1503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCName: "\uC2DC\uBBFC"
-  DialogueStartCount: 32
+  DialogueStartCount: 37
   HP: 0
   Armor: 0
   Speed: 0

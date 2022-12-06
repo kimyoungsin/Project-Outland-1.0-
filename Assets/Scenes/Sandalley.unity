@@ -3310,7 +3310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCName: "\uC0CC\uB4E4\uB9AC \uC8FC\uBBFC"
-  DialogueStartCount: 46
+  DialogueStartCount: 41
   HP: 0
   Armor: 0
   Speed: 0
@@ -3551,7 +3551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCName: "\uC0CC\uB4E4\uB9AC \uC8FC\uBBFC"
-  DialogueStartCount: 47
+  DialogueStartCount: 52
   HP: 0
   Armor: 0
   Speed: 0

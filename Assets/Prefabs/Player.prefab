@@ -166,6 +166,7 @@ MonoBehaviour:
   invincible: 0
   invincibletime: 1
   PreviousMapNum: 0
+  Player_HitSound: 
 --- !u!95 &5843180267901666590
 Animator:
   serializedVersion: 4
@@ -312,14 +313,17 @@ MonoBehaviour:
   - {fileID: 3077962018075693844}
   - {fileID: 8441007794102450950}
   - {fileID: 39046886525981312}
-  weapons:
-  - {fileID: 3955993476812144089, guid: cee6823cd520bdf4aae08fcac765115b, type: 3}
-  - {fileID: 6332096809916716136, guid: 8dfa371884d47eb4f8d185e7958352ed, type: 3}
-  - {fileID: 1943486590379584095, guid: 774e3c813f4f8e547bc9da7412bc3766, type: 3}
   CurrentWeapon: {fileID: 3077962018075693844}
   WeaponPosition: {fileID: 5132905941427788872}
-  player: {fileID: 390426220772314402}
-  weaponScript: {fileID: 0}
+  PlayerMovement: {fileID: 390426220772314402}
+  Weapon: {fileID: 0}
+  WeaponSprite: {fileID: 0}
+  FirePos: {fileID: 5132905941427788872}
+  bullet: {fileID: 0}
+  theInventory: {fileID: 0}
+  Attackable: 1
+  Reloading: 0
+  AtkStop: 0
 --- !u!1001 &3412891021987701286
 PrefabInstance:
   m_ObjectHideFlags: 0

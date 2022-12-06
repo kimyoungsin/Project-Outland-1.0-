@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraScript : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class CameraScript : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if(instance == null)
+        
+        if (instance == null)
         {
             DontDestroyOnLoad(this.gameObject);
             instance = this;
@@ -21,9 +23,8 @@ public class CameraScript : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void BoundingShape(PolygonCollider2D newCol)
     {
-        
+        GetComponent<CinemachineConfiner>().m_BoundingShape2D = newCol;
     }
 }

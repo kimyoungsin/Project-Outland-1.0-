@@ -91,40 +91,43 @@ public class PlayerMovement : MonoBehaviour
     {
         
 
-
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if(MoveStop == false)
         {
-            player.TPRefreshOff();
-        }
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            if(!StopStealthKey)
+            if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                StopStealthKey = true;
-                if (!Stealth)
+                player.TPRefreshOff();
+            }
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                if (!StopStealthKey)
                 {
-                    //Debug.Log("<은신>");
-                    
-                    MovementSpeed = MovementSpeed / 3;
-                }
-                else
-                {
-                    //Debug.Log("<발각>");
-                    
-                    MovementSpeed = 4;
+                    StopStealthKey = true;
+                    if (!Stealth)
+                    {
+                        //Debug.Log("<은신>");
 
+                        MovementSpeed = MovementSpeed / 3;
+                    }
+                    else
+                    {
+                        //Debug.Log("<발각>");
+
+                        MovementSpeed = 4;
+
+                    }
+                    Invoke("IsStealth", 0.25f);
                 }
-                Invoke("IsStealth", 0.25f);
+
             }
 
-        }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                PickupItem();
+                NPCDialogue();
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            PickupItem();
-            NPCDialogue();
-            
+            }
         }
+        
     }
 
     public void StopMove()

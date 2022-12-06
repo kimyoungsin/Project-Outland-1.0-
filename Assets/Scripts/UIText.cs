@@ -8,6 +8,7 @@ public class UIText : MonoBehaviour
     Color TextColor;
     public PlayerMovement playermove;
     public Weapons weapons;
+    public WeaponManager weaponManager;
     public Text StealthText; // 은신상태 텍스트
     public Text InteractionText; // 상호작용(npc이름, 문, 이동할 지역 등) 텍스트
     public Text ItemPickUpText; // 줍는 아이템 텍스트
@@ -19,6 +20,7 @@ public class UIText : MonoBehaviour
     public string ItemName;
 
     static public UIText instance;
+    public NPC DialogueNPC;
 
 
     void Awake()
@@ -39,6 +41,7 @@ public class UIText : MonoBehaviour
     {
         playermove = FindObjectOfType<PlayerMovement>();
         weapons = FindObjectOfType<Weapons>();
+        weaponManager = FindObjectOfType<WeaponManager>();
     }
  
     public void DialogueStart()
@@ -46,7 +49,9 @@ public class UIText : MonoBehaviour
         DialogueStopMove();
         DiaUI.SetActive(true);
         DialogueData.DialogueStartCount();
-        
+        DialogueNPC = GameObject.FindGameObjectWithTag("DialogueNPC").GetComponent<NPC>();
+
+
     }
 
     public void DialogueStopMove()
@@ -54,12 +59,14 @@ public class UIText : MonoBehaviour
         playermove = FindObjectOfType<PlayerMovement>();
         playermove.StopMove();
         weapons = FindObjectOfType<Weapons>();
-        weapons.StopAtk();
+        weaponManager.StopAtk();
     }
 
     public void DialogueEnd()
     {
         DiaUI.SetActive(false);
+        DialogueNPC.Talking();
+        DialogueNPC = null;
     }
     
 

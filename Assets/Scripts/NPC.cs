@@ -14,6 +14,7 @@ public class NPC : MonoBehaviour
     public int Armor;
     public int Speed;
     public bool isTalk;
+    public bool isTalking = false;
 
 
 
@@ -27,13 +28,18 @@ public class NPC : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if(isTalk)
+            if(isTalking == false)
             {
-                gameObject.tag = "DialogueNPC";
-                DialogueDatabase.SharedInstance.DialogueNpcName = NPCName;
-                DialogueDatabase.SharedInstance.CurrentDialogueStartCount = DialogueStartCount;
-                UItext.DialogueStart();
+                if (isTalk)
+                {
+                    isTalking = true;
+                    gameObject.tag = "DialogueNPC";
+                    DialogueDatabase.SharedInstance.DialogueNpcName = NPCName;
+                    DialogueDatabase.SharedInstance.CurrentDialogueStartCount = DialogueStartCount;
+                    UItext.DialogueStart();
+                }
             }
+            
         }
     }
 
@@ -55,4 +61,16 @@ public class NPC : MonoBehaviour
             isTalk = false;
         }
     }
+    public void Talking()
+    {
+        if (isTalking == true)
+        {
+            isTalking = false;
+        }
+        else if (isTalking == false)
+        {
+            isTalking = true;
+        }
+    }
+
 }

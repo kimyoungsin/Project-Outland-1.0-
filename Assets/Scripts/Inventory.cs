@@ -21,6 +21,7 @@ public class Inventory : MonoBehaviour
 
     public PlayerMovement playermove;
     public Weapons weapon;
+    public WeaponManager weaponManager;
     public QuickSlotControl QucikSlotCon;
 
     public GameObject ItemExplainUI; //마우스 닿으면 표시하는 설명 ui
@@ -34,6 +35,7 @@ public class Inventory : MonoBehaviour
         slots = SlotsParent.GetComponentsInChildren<Slot>();
         playermove = FindObjectOfType<PlayerMovement>();
         weapon = FindObjectOfType<Weapons>();
+        weaponManager = FindObjectOfType<WeaponManager>();
     }
 
     void Update()
@@ -94,7 +96,7 @@ public class Inventory : MonoBehaviour
                 OpenInventory();
                 playermove.StopMove();
                 weapon = FindObjectOfType<Weapons>();
-                weapon.StopAtk();
+                weaponManager.StopAtk();
             }
             else
             {
@@ -102,7 +104,7 @@ public class Inventory : MonoBehaviour
                 CloseInventory();
                 playermove.StopMove();
                 weapon = FindObjectOfType<Weapons>();
-                weapon.StopAtk();
+                weaponManager.StopAtk();
             }
         }
     }
@@ -161,7 +163,7 @@ public class Inventory : MonoBehaviour
                     if (slots[i].item.itemName == _item.itemName)
                     {
                         bulletCount = slots[i].itemCount;
-                        Debug.Log(bulletCount);
+                        Debug.Log("CheckBullet: " + bulletCount);
                         return;
                     }
                 }
@@ -182,7 +184,7 @@ public class Inventory : MonoBehaviour
                         weapon = FindObjectOfType<Weapons>();
                         slots[i].SetSlotCount(_count);
                         bulletCount = slots[i].itemCount;
-                        Debug.Log(bulletCount);
+                        Debug.Log("usebullet: "+bulletCount);
                         Debug.Log(slots[i].itemCount);
                         return;
                     }
