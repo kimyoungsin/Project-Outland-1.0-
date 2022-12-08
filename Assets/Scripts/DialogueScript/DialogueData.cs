@@ -55,8 +55,6 @@ public class DialogueData : MonoBehaviour
         List<Dictionary<string, object>> data_Dialogue = CSVReader.Read("Dialogue");
         List<Dictionary<string, object>> data_DialogueSelect = CSVReader.Read("DialogueSelect");
 
-        
-
         DialogueNumber = data_Dialogue[Count]["Number"].ToString();
         DialogueNumberCount = int.Parse(DialogueNumber);
         DialogueNameTextObj.text = data_Dialogue[Count]["이름"].ToString();
@@ -65,9 +63,7 @@ public class DialogueData : MonoBehaviour
         DialogueSelectEventID = data_Dialogue[Count]["이벤트시작Num"].ToString();
         DialogueSelectNum = data_Dialogue[Count]["선택지개수"].ToString();
         
-  
 
-        
         if(CanDialogue == true)
         {
             if (Input.GetKeyDown(KeyCode.Z))
@@ -203,8 +199,7 @@ public class DialogueData : MonoBehaviour
                     Count += 1;
                 }
             }
-        
-            
+           
         }
     }
 
