@@ -27,8 +27,10 @@ public class Inventory : MonoBehaviour
     public GameObject ItemExplainUI; //¸¶¿ì½º ´êÀ¸¸é Ç¥½ÃÇÏ´Â ¼³¸í ui
     public Text ItemExplain;
     public Text ItemValue;
+    public Text MoneyText;
 
-    public int bulletCount;
+    public int bulletCount; //ÃÑ¾Ë ¼ö
+    public int Metal; //°ñµå, Ä¸, ¸Ó´Ï...
 
     void Start()
     {
@@ -88,6 +90,7 @@ public class Inventory : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.I))
         {
+            MoneyText.text = "M: "+ Metal.ToString();
             inventoryActivated = !inventoryActivated;
 
             if(inventoryActivated)

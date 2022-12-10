@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int Lv = 1;
     public float hp = 100;
     public float Maxhp = 100;
     public float tp = 60;
     public float Maxtp = 60;
-    public int Armor = 0;
-    public float MovementSpeed = 4;
+    public int Armor = 0; //방어력
+    public float MovementSpeed = 4; //이속
+    public int Strength = 1; //힘(소지무게 증가, 근접공격 강화, 체력 및 방어력 증가 등 관여)
+    public int Knowledge = 1; //지식(캐릭터의 지능 및 대화에 관련된 능력치.)
+    public int Technique = 1; //테크닉(캐릭터의 민첩성과 감각에 관련된 능력치.)
+    public int PerkPoint = 0; //퍽 포인트
+
     public bool TPRefresh = true;
     public bool invincible = false;
     public float invincibletime = 1f;
-
 
     public int PreviousMapNum;
     static public Player instance;

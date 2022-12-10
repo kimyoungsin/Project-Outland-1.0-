@@ -7,7 +7,7 @@ public class MainSystem : MonoBehaviour
     public static MainSystem SharedInstance = null; //Instance 변수를 싱글톤으로 선언, 다른 오브젝트에서 사용 가능
 
 
-    public int Metal = 0;
+    //public int Metal = 0;
     private void Awake()
     {
         if (SharedInstance == null)//Instance가 시스템에 없을 때 

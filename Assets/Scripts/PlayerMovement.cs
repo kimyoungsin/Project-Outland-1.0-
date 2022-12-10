@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public bool MoveStop = false; //대화, 이벤트 등 발생시 움직임 멈춤
     public bool WeaponShow; // 무기 들기 여부(T버튼 무기 꺼내기)
     public bool isPickup; //아이템 줍기 가능여부
+    public bool isMetalPickup; //금속(돈)줍기 가능여부
 
     //public GameObject DialogueObj;
     private UIText UItext;
@@ -28,7 +29,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Inventory theInventory;
 
-    public LayerMask isLayer;
+    public LayerMask ItemLayer;
+    public LayerMask MetalLayer;
     private RaycastHit2D hitInfo;
 
 
@@ -163,14 +165,18 @@ public class PlayerMovement : MonoBehaviour
         {
             UItext.InteractionName = collision.GetComponent<ItemPickUp>().item.itemName;
         }
-        
+        else if (collision.gameObject.CompareTag("Metal"))
+        {
+            UItext.InteractionName = "금속: " + collision.GetComponent<MetalPickUp>().MetalValue;
+        }
+
 
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //DialogueObj = null;
-        if (collision.gameObject.CompareTag("Item"))
+        
+        if (collision.gameObject.CompareTag("Item") || collision.gameObject.CompareTag("Metal"))
         {
             UItext.InteractionName = "";
         }
@@ -178,9 +184,18 @@ public class PlayerMovement : MonoBehaviour
 
     public void CheckItem()
     {
-        if(hitInfo = Physics2D.CircleCast(transform.position, 1f, Vector2.up, 0f, isLayer))
+        if(hitInfo = Physics2D.CircleCast(transform.position, 1f, Vector2.up, 0f, ItemLayer))
         {
             isPickup = true;
+        }
+        else if (hitInfo = Physics2D.CircleCast(transform.position, 1f, Vector2.up, 0f, MetalLayer))
+        {
+            isMetalPickup = true;
+        }
+        else 
+        {
+            isPickup = false;
+            isMetalPickup = false;
         }
     }
 
@@ -193,6 +208,12 @@ public class PlayerMovement : MonoBehaviour
         if(isPickup)
         {
             theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);
+            Destroy(hitInfo.transform.gameObject);
+            UItext.InteractionName = "";
+        }
+        else if(isMetalPickup)
+        {
+            theInventory.Metal += hitInfo.transform.GetComponent<MetalPickUp>().MetalValue;
             Destroy(hitInfo.transform.gameObject);
             UItext.InteractionName = "";
         }
