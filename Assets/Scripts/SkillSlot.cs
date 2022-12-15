@@ -16,13 +16,16 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     public TMP_Text CurrentSkillLvText;
     public TMP_Text CurrentSkillLvExplainUIText;
     public TMP_Text MaxSkillLvText;
-
+    public Player player;
 
     [TextArea]
     public string Explain; // 스킬 설명
+
+    public float Health = 0;
+    public float AbdominalBreathing = 0;
     void Start()
     {
-        
+        player = FindObjectOfType<Player>();
     }
 
     
@@ -33,12 +36,40 @@ public class SkillSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if(player.PerkPoint > 0)
+        {
+            if(SkillLv < MaxSkillLv)
+            {
+                player.PerkPoint -= 1;
+                SkillLv += 1;
+                CurrentSkillLvExplainUIText.text = "티어: " + SkillLv;
+                MaxSkillLvText.text = "최대: " + MaxSkillLv;
+                switch (SkillName)
+                {
+                    case "운동":
+                        Health += 5;
+                        player.SkillLvUp(Health, SkillName);
+                        break;
+                    case "복식호흡":
+                        AbdominalBreathing += 5;
+                        player.SkillLvUp(AbdominalBreathing, SkillName);
+                        break;
+                    default:
+                        break;
+                }
 
+            }
+            else
+            {
+
+            }
+
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData2)
     {
-        SkillExplainUI.transform.position = (this.transform.position + new Vector3(180f, -30f));
+        SkillExplainUI.transform.position = (this.transform.position + new Vector3(200f, -40f));
         SkillExplainText.text = Explain;
         CurrentSkillLvExplainUIText.text = "티어: " + SkillLv;
         MaxSkillLvText.text = "최대: " + MaxSkillLv;

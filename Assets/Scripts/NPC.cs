@@ -15,8 +15,7 @@ public class NPC : MonoBehaviour
     public int Speed;
     public bool isTalk;
     public bool isTalking = false;
-
-
+    public bool isenemy = false;
 
     void Start()
     {
@@ -54,12 +53,22 @@ public class NPC : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if(isenemy == false)
         {
-            gameObject.tag = "NPC";
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                gameObject.tag = "NPC";
+                UItext.InteractionName = "";
+                isTalk = false;
+            }
+        }
+        else
+        {
+            gameObject.tag = "Enemy";
             UItext.InteractionName = "";
             isTalk = false;
         }
+
     }
     public void Talking()
     {
@@ -73,4 +82,18 @@ public class NPC : MonoBehaviour
         }
     }
 
+    public void Attacking()
+    {
+        gameObject.GetComponent<Enemy_Chase>().enabled = true;
+        gameObject.GetComponent<Enemy>().enabled = true;
+        gameObject.GetComponent<Animator>().enabled = true;
+        isenemy = true;
+        gameObject.tag = "Enemy";
+    }
+
+    public void Opening()
+    {
+        gameObject.GetComponent<NPC>().enabled = false;
+        gameObject.GetComponent<Door>().enabled = true;
+    }
 }

@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: e3b7be223941271408980665ffbf4ec4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 123
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6075340d59c70dc43a159b2f882cdfcb
+      internalID: 1024818564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 123
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae31023ddbe8ca54084693d32ab6f01b
+      internalID: -1180263787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 123
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf56a0580d3e9e4db437a097fe7ec7b
+      internalID: -165353714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 123
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6667607fcad942468bf6ecc83584837
+      internalID: -13212571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 123
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf86a97e18ba4ea47ab238b085801653
+      internalID: -115213099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 123
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93aec6cad21f1694693449478f096cda
+      internalID: -1476548130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 123
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ff6d31ebed1434e84863c143019556
+      internalID: 1788204386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_7
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 123
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5772bad6217f1144f9d69a9e115a23ef
+      internalID: -709390551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667c3bb4510e20b4c94cca6cfc7aeaef
+      internalID: 1245025224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 83
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ee06495a458f3459c9a97e49845416
+      internalID: 867402823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 84
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc892b575431c3439e5890530d72453
+      internalID: 1661819356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_11
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 83
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb5c2393676e9e418c0c054cbeed796
+      internalID: -1766057646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_12
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 83
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f360eb2d97c3a0a4e8e2a31c2c0fad92
+      internalID: -736021858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_13
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 83
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1330e3be22f67441b4d04ffa5a08483
+      internalID: -991884235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_14
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 83
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0d3787205ccc34dbdae817a9d24f10
+      internalID: -1601041175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_15
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 83
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c727b1e6d2376d7499b01a9cd7ba7fff
+      internalID: -327630567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 44
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91868cb62201004084303f544b1f190
+      internalID: 815566885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_17
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 44
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5fd76f2c33d4b4c9e0f18fcbd94fe9
+      internalID: 2139409026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_18
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 44
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a9f24f5f88ca442a6d424a4879e749
+      internalID: -354470186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_19
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 44
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be6d8fbc6aff3047b86554797ce1f91
+      internalID: 366645862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 44
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26acf180ff3f5a4193a7434fc8d9cf7
+      internalID: 84526357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_21
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 44
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601ea4499578d5449bd2737214a8a224
+      internalID: 1930301099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_22
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 44
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c90ebb7e68e61b43b978923fb3776a1
+      internalID: -1816557861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_23
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 44
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e675c2e7d984b24ba7a8af32a17796b
+      internalID: -1074418467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b24dc02878b4f94491dbb67f7b74ee6
+      internalID: -1198088263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_25
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 4
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f32d14414857745af8b0b7cbcc3063
+      internalID: 1548607096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_26
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 4
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fbde5e638775d48ae4f0dce01deede
+      internalID: 341569390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_27
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 4
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c066095345744445b4c5e9fce05a4f4
+      internalID: -1590277754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_28
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 4
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103a5bff99414f440a2b2b91733229ca
+      internalID: -1478950813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_29
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 4
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6abb94fb40e5d9346a09e80d30b77f6f
+      internalID: -1844798729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_30
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 4
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a3e9b0d8e0e964fbe8537b1efd75b8
+      internalID: -167679490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_8_Way-imppistol)_31
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 4
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ce72ec0b93bbc4d8f12d72fb1c9db6
+      internalID: 1168715937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Player(OnehandPistol_8_Way-imppistol)_10: 1661819356
+      Player(OnehandPistol_8_Way-imppistol)_9: 867402823
+      Player(OnehandPistol_8_Way-imppistol)_12: -736021858
+      Player(OnehandPistol_8_Way-imppistol)_27: -1590277754
+      Player(OnehandPistol_8_Way-imppistol)_1: -1180263787
+      Player(OnehandPistol_8_Way-imppistol)_5: -1476548130
+      Player(OnehandPistol_8_Way-imppistol)_20: 84526357
+      Player(OnehandPistol_8_Way-imppistol)_22: -1816557861
+      Player(OnehandPistol_8_Way-imppistol)_26: 341569390
+      Player(OnehandPistol_8_Way-imppistol)_29: -1844798729
+      Player(OnehandPistol_8_Way-imppistol)_23: -1074418467
+      Player(OnehandPistol_8_Way-imppistol)_11: -1766057646
+      Player(OnehandPistol_8_Way-imppistol)_31: 1168715937
+      Player(OnehandPistol_8_Way-imppistol)_0: 1024818564
+      Player(OnehandPistol_8_Way-imppistol)_3: -13212571
+      Player(OnehandPistol_8_Way-imppistol)_13: -991884235
+      Player(OnehandPistol_8_Way-imppistol)_19: 366645862
+      Player(OnehandPistol_8_Way-imppistol)_21: 1930301099
+      Player(OnehandPistol_8_Way-imppistol)_18: -354470186
+      Player(OnehandPistol_8_Way-imppistol)_4: -115213099
+      Player(OnehandPistol_8_Way-imppistol)_6: 1788204386
+      Player(OnehandPistol_8_Way-imppistol)_25: 1548607096
+      Player(OnehandPistol_8_Way-imppistol)_14: -1601041175
+      Player(OnehandPistol_8_Way-imppistol)_24: -1198088263
+      Player(OnehandPistol_8_Way-imppistol)_30: -167679490
+      Player(OnehandPistol_8_Way-imppistol)_16: 815566885
+      Player(OnehandPistol_8_Way-imppistol)_17: 2139409026
+      Player(OnehandPistol_8_Way-imppistol)_2: -165353714
+      Player(OnehandPistol_8_Way-imppistol)_8: 1245025224
+      Player(OnehandPistol_8_Way-imppistol)_15: -327630567
+      Player(OnehandPistol_8_Way-imppistol)_28: -1478950813
+      Player(OnehandPistol_8_Way-imppistol)_7: -709390551
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

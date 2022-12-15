@@ -132,6 +132,7 @@ MonoBehaviour:
   - {fileID: 2344397384691596709, guid: 4c0381845ad68c74e91b5975c343f0bf, type: 3}
   - {fileID: 4264891239229971489, guid: 78197a16b34c3d94bb0bc35c68c987fb, type: 3}
   - {fileID: 7991404193749219327, guid: 9aef70d197597ed4981cdb6a3b78bd23, type: 3}
+  UnconditionalDropItemPrefab: {fileID: 1289705932527266958, guid: 3ac7cc0133b632145bf3b16c97297000, type: 3}
   rand: 0
   DropCount: 1
 --- !u!114 &1422214153095184235

@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     //public GameObject DialogueObj;
     private UIText UItext;
+    public SkillSlot skillSlot;
 
     public Sprite[] PlayerSprite = new Sprite[9];
 
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
         UItext = FindObjectOfType<UIText>();
+        skillSlot = FindObjectOfType<SkillSlot>();
     }
 
 

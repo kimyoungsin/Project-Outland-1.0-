@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class SkillTree : MonoBehaviour
 {
@@ -12,9 +14,14 @@ public class SkillTree : MonoBehaviour
     public Weapons weapon;
     public WeaponManager weaponManager;
     public Inventory theInventory;
+    public Player player;
+
+    public TMP_Text PerkPointUI;//플레이어 퍽포인트 표시
+    public TMP_Text LvTextUI;//플레이어 레벨 표시
 
     void Start()
     {
+        player = FindObjectOfType<Player>();
         playermove = FindObjectOfType<PlayerMovement>();
         weapon = FindObjectOfType<Weapons>();
         weaponManager = FindObjectOfType<WeaponManager>();
@@ -24,6 +31,8 @@ public class SkillTree : MonoBehaviour
     void Update()
     {
         TryOpenSkillTree();
+        PerkPointUI.text = "퍽 포인트: " + player.PerkPoint;
+        LvTextUI.text = "레벨: " + player.Lv;
     }
 
     private void TryOpenSkillTree()
@@ -34,7 +43,7 @@ public class SkillTree : MonoBehaviour
 
             if (SkillTreeActivated)
             {
-
+                player = FindObjectOfType<Player>();
                 OpenSkillTree();
                 playermove.StopMove();
                 weapon = FindObjectOfType<Weapons>();
@@ -44,6 +53,7 @@ public class SkillTree : MonoBehaviour
             {
 
                 CloseSkillTree();
+                player = FindObjectOfType<Player>();
                 playermove.StopMove();
                 weapon = FindObjectOfType<Weapons>();
                 weaponManager.StopAtk();
@@ -53,6 +63,7 @@ public class SkillTree : MonoBehaviour
 
     private void OpenSkillTree()
     {
+        
         SkillTreeUI.SetActive(true);
         OtherUI.SetActive(false);
     }

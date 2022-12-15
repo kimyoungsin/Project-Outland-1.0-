@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: 7eadbaf557fce104aa07790da08ac52c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 123
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f54b8b3abaceb4eb6e911a3b36c24b
+      internalID: -1702674331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 123
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d42218e4bfac63499c03183ff9bcef2
+      internalID: -476225942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 123
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a93b24bdb6d0a42aaae8ed1446e18d
+      internalID: -1249493775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 123
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137952c81ee9ee74f9aeb1c7b037c9a4
+      internalID: 1883459292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 123
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be0cceed9b9f564ebdb3f7e476d7404
+      internalID: 820807662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 123
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c651242c28dc94f9ea34c9f72293fa
+      internalID: -1431190747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 123
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f11db6255e88746adecbbd625e906c
+      internalID: -705640486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 123
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d96ecd7b58867548b721766975c002d
+      internalID: -647392609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 84
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fae2957b09cb2641845abe08307bdbf
+      internalID: -1152678859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_9
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 84
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8af16ac9374eb248911cd9abf7d20ed
+      internalID: 676095193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 84
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9260317a4eb3a44be85a52a4473fa6
+      internalID: -471457985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 84
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e12660bc16d5784ead89e704303e969
+      internalID: -338219453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 83
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54db9a92952c21247bbb946b29a9b6c8
+      internalID: 1685196945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 83
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090ec8ac2e38c52448ed61737678b3a3
+      internalID: 484558161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_14
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 83
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f90dd49c3d105b499565a72901d28b3
+      internalID: 1687843469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_15
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 83
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0fc9e044068d74bb2674ac9bf023f9
+      internalID: 1844284139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 44
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3500f5f35f79704286bce35c90de0a5
+      internalID: -1155771265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_17
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 44
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52997ac918a9d9c43a5abf9ffa2a68bc
+      internalID: 972903112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_18
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 44
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ced25aea818a946b524dac5d26181d
+      internalID: -2006734974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_19
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 44
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425f811ae436f9b45a30806d608e6e92
+      internalID: 611989133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 44
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd70be97d3560d84180b1338ad60f986
+      internalID: -937060623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_21
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 44
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a3b6c2d823d7243bb774f9f22a2b69
+      internalID: -424137487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_22
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 44
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a557beb9441d86428decb4c9352ccc2
+      internalID: 597063482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_23
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 44
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0961c6dca10124486fe111eae9811e
+      internalID: -1353935696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f46bc96cbe25e3448016d2b7e73a77d
+      internalID: -1675801003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_25
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 4
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1caf468f02bf74542bc9baf1b7b1fe13
+      internalID: -702796924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_26
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0ad41ccce86b44eb766dae7d46aee2
+      internalID: 744852429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_27
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 4
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080af6e518cfe65449c272381d92feb8
+      internalID: -595316716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_28
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 4
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084fdacc13f5ba6478c0a277d2a3e45f
+      internalID: -453477217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_29
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 3
+        width: 15
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805eb2070576ed04ca59adf1a4a4d8ca
+      internalID: -1193208146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_30
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 4
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b05795d30fde374eb8ff6b386f93f5a
+      internalID: 2055116819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player(OnehandPistol_Stand_Relord)_31
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 3
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6754140065e916c43974e8ef532421e4
+      internalID: 1731538410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Player(OnehandPistol_Stand_Relord)_6: -705640486
+      Player(OnehandPistol_Stand_Relord)_4: 820807662
+      Player(OnehandPistol_Stand_Relord)_23: -1353935696
+      Player(OnehandPistol_Stand_Relord)_24: -1675801003
+      Player(OnehandPistol_Stand_Relord)_26: 744852429
+      Player(OnehandPistol_Stand_Relord)_8: -1152678859
+      Player(OnehandPistol_Stand_Relord)_16: -1155771265
+      Player(OnehandPistol_Stand_Relord)_9: 676095193
+      Player(OnehandPistol_Stand_Relord)_19: 611989133
+      Player(OnehandPistol_Stand_Relord)_20: -937060623
+      Player(OnehandPistol_Stand_Relord)_7: -647392609
+      Player(OnehandPistol_Stand_Relord)_18: -2006734974
+      Player(OnehandPistol_Stand_Relord)_3: 1883459292
+      Player(OnehandPistol_Stand_Relord)_1: -476225942
+      Player(OnehandPistol_Stand_Relord)_0: -1702674331
+      Player(OnehandPistol_Stand_Relord)_13: 484558161
+      Player(OnehandPistol_Stand_Relord)_25: -702796924
+      Player(OnehandPistol_Stand_Relord)_5: -1431190747
+      Player(OnehandPistol_Stand_Relord)_12: 1685196945
+      Player(OnehandPistol_Stand_Relord)_17: 972903112
+      Player(OnehandPistol_Stand_Relord)_27: -595316716
+      Player(OnehandPistol_Stand_Relord)_28: -453477217
+      Player(OnehandPistol_Stand_Relord)_21: -424137487
+      Player(OnehandPistol_Stand_Relord)_2: -1249493775
+      Player(OnehandPistol_Stand_Relord)_11: -338219453
+      Player(OnehandPistol_Stand_Relord)_22: 597063482
+      Player(OnehandPistol_Stand_Relord)_10: -471457985
+      Player(OnehandPistol_Stand_Relord)_31: 1731538410
+      Player(OnehandPistol_Stand_Relord)_30: 2055116819
+      Player(OnehandPistol_Stand_Relord)_29: -1193208146
+      Player(OnehandPistol_Stand_Relord)_14: 1687843469
+      Player(OnehandPistol_Stand_Relord)_15: 1844284139
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

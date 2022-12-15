@@ -21,6 +21,7 @@ public class Weapons : MonoBehaviour
 
     static public Weapons instance;
     public string pistol_shot_sound;
+    public string pistol_reload_sound;
 
     public enum WeaponTypes
     {

@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
     public int CurSceneNum;
     public int NextSceneNum;
     public string SceneName;
+    public bool isClose = false; //닫혀있으면 못열게
 
     private Player player;
     private UIText DoorInteractionName;

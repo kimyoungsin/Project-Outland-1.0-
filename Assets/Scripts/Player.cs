@@ -5,16 +5,18 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public int Lv = 1;
+    public int Exp = 0;
+    public int MaxExp = 100;
     public float hp = 100;
     public float Maxhp = 100;
     public float tp = 60;
     public float Maxtp = 60;
     public int Armor = 0; //방어력
     public float MovementSpeed = 4; //이속
-    public int Strength = 1; //힘(소지무게 증가, 근접공격 강화, 체력 및 방어력 증가 등 관여)
-    public int Knowledge = 1; //지식(캐릭터의 지능 및 대화에 관련된 능력치.)
-    public int Technique = 1; //테크닉(캐릭터의 민첩성과 감각에 관련된 능력치.)
-    public int PerkPoint = 0; //퍽 포인트
+    public int Strength = 0; //힘(소지무게 증가, 근접공격 강화, 체력 및 방어력 증가 등 관여)
+    public int Knowledge = 0; //지식(캐릭터의 지능 및 대화에 관련된 능력치.)
+    public int Technique = 0; //테크닉(캐릭터의 민첩성과 감각에 관련된 능력치.)
+    public int PerkPoint = 1; //퍽 포인트
 
     public bool TPRefresh = true;
     public bool invincible = false;
@@ -24,12 +26,14 @@ public class Player : MonoBehaviour
     static public Player instance;
     public string Player_HitSound;
 
+    public SkillSlot skillSlot;
     SpriteRenderer spriteRenderer;
 
 
     // Start is called before the first frame update
     void Awake()
     {
+        skillSlot = FindObjectOfType<SkillSlot>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (instance == null)
         {
@@ -61,6 +65,11 @@ public class Player : MonoBehaviour
                 
             }
         }
+        if(Exp >= MaxExp)
+        {
+            Lv += 1;
+            PerkPoint += 1; //퍽 포인트
+}
     }
 
     public void TPRefreshOff()
@@ -110,6 +119,21 @@ public class Player : MonoBehaviour
 
     }
 
-
+    public void SkillLvUp(float _up, string _name)
+    {
+        switch (_name)
+        {
+            case "운동":
+                Maxhp += 5;
+                hp += 5;
+                break;
+            case "복식호흡":
+                Maxtp += 5;
+                tp += 5;
+                break;
+            default:
+                break;
+        }
+    }
 
 }

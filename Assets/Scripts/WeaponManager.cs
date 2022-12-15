@@ -85,7 +85,6 @@ public class WeaponManager : MonoBehaviour
                 else
                 {
 
-                    Weapon.BulletSetting(); //weapon의 BulletSetting로 발사하는 탄환의 대미지, 탄속 등 설정
                     if (Weapon.weaponTypes == Weapons.WeaponTypes.Fist)
                     {
                         PlayerMovement.Anim.SetBool("isFist", true);
@@ -99,6 +98,7 @@ public class WeaponManager : MonoBehaviour
                     }
                     else if (Weapon.weaponTypes == Weapons.WeaponTypes.OnehandGun)
                     {
+                        Weapon.BulletSetting(); //weapon의 BulletSetting로 발사하는 탄환의 대미지, 탄속 등 설정
                         PlayerMovement.Anim.SetBool("isOnehandGun", true);
                         if (Attackable == true)
                         {
@@ -115,6 +115,7 @@ public class WeaponManager : MonoBehaviour
                     }
                     else if (Weapon.weaponTypes == Weapons.WeaponTypes.Onehand)
                     {
+                        Weapon.BulletSetting(); //weapon의 BulletSetting로 발사하는 탄환의 대미지, 탄속 등 설정
                         PlayerMovement.Anim.SetBool("isOnehand", true);
                         if (Attackable == true)
                         {
@@ -150,6 +151,8 @@ public class WeaponManager : MonoBehaviour
                 {
                     if (Weapon.Round < Weapon.MaxRound)
                     {
+                        SoundManager.SharedInstance.PlaySE(Weapon.pistol_reload_sound);
+                        PlayerMovement.Anim.SetBool("isRelord", true);
                         Attackable = false;
                         Reloading = true;
                         Invoke("ReroldOn", Weapon.RelordSpeed);
@@ -249,6 +252,7 @@ public class WeaponManager : MonoBehaviour
 
     public void ReroldOn()
     {
+        PlayerMovement.Anim.SetBool("isRelord", false);
         Weapon.UseRound = Weapon.Round - Weapon.MaxRound;
         theInventory.CheckBullet(Weapon.BulletType);
         Weapon.Round += theInventory.BulletCountReturn(Weapon.MaxRound);

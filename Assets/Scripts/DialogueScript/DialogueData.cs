@@ -90,6 +90,22 @@ public class DialogueData : MonoBehaviour
                     UItext.DialogueEnd();
                     Count = 0;
                 }
+                else if (DialogueEvent == "잠금해제")
+                {
+                    SkipLine = data_Dialogue[Count]["스킵라인"].ToString();
+
+                    SkipLineCount = int.Parse(SkipLine);
+                    Count = SkipLineCount;
+                    print(SkipLineCount);
+
+                    DialogueNPC = GameObject.FindGameObjectWithTag("DialogueNPC").GetComponent<NPC>();
+                    DialogueNPC.DialogueStartCount = SkipLineCount;
+
+                    UItext.DialogueStopMove();
+                    UItext.DialogueEnd();
+                    Count = 0;
+                    DialogueNPC.Opening();
+                }
                 else if (DialogueEvent == "아이템")
                 {
                     ItemReward = GameObject.FindGameObjectWithTag("DialogueNPC").GetComponent<Item_Reward>();
@@ -191,6 +207,22 @@ public class DialogueData : MonoBehaviour
                         default:
                             break;
                     }
+                }
+                else if (DialogueEvent == "전투")
+                {
+                    SkipLine = data_Dialogue[Count]["스킵라인"].ToString();
+
+                    SkipLineCount = int.Parse(SkipLine);
+                    Count = SkipLineCount;
+                    print(SkipLineCount);
+
+                    DialogueNPC = GameObject.FindGameObjectWithTag("DialogueNPC").GetComponent<NPC>();
+                    DialogueNPC.DialogueStartCount = SkipLineCount;
+
+                    UItext.DialogueStopMove();
+                    UItext.DialogueEnd();
+                    Count = 0;
+                    DialogueNPC.Attacking();
                 }
                 else
                 {

@@ -8,9 +8,17 @@ public class Enemy : MonoBehaviour
     public int Maxhp;
     public int Armor;
     public int Damage;
+    public int Exp;
     public float MovementSpeed;
 
     public GameObject[] DropItemPrefab;
+    public GameObject UnconditionalDropItemPrefab;
+
+    /*
+    public GameObject DamageText;
+    public Transform textPos;
+    */
+
     public int rand;
     public int DropCount;
 
@@ -55,7 +63,11 @@ public class Enemy : MonoBehaviour
         spriteRenderer.color = new Color(1, 1, 1, 0.5f);
         Invoke("HitBlink", 0.25f);
         hp -= Damage;
-
+        /*
+        GameObject text = Instantiate(DamageText);
+        text.transform.position = textPos.position;
+        text.GetComponent<FloatingDamageText>().damage = Damage;
+        */
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -71,7 +83,8 @@ public class Enemy : MonoBehaviour
 
     public void Destruction()
     {
-        switch(rand)
+        Instantiate(UnconditionalDropItemPrefab, this.transform.position, Quaternion.identity);
+        switch (rand)
         {
             case 0:
                 Instantiate(DropItemPrefab[0], this.transform.position, Quaternion.identity);

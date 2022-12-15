@@ -20,7 +20,7 @@ MonoBehaviour:
   DropItemCount: 1
   Value: 15
   Explain: "\uD558\uB098\uC758 \uD328\uCE58\uAC00 \uC18C\uB3C5, \uC751\uACE0, \uC9C0\uD608
-    \uAE30\uB2A5\uC744 \n\uD558\uB294 \uBC18\uCC3D\uACE0. HP 15 \uD68C\uBCF5."
+    \n\uAE30\uB2A5\uC744 \uD558\uB294 \uBC18\uCC3D\uACE0. HP 15 \uD68C\uBCF5."
   HPEffect: 15
   TPEffect: 0
   MoveSpeedEfeect: 0
