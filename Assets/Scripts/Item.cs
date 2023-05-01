@@ -13,6 +13,7 @@ public class Item : ScriptableObject
         Quest,
         Ingredient,
         Bullet,
+        Metal,
         ETC
     }
     public enum WeaponTypes
@@ -29,12 +30,13 @@ public class Item : ScriptableObject
         HeavyArms
 
     }
-
+    public int ID; //아이템 ID값
     public WeaponTypes weaponTypes; // 아이템이 무기일 경우 무기타입
     public string itemName; // 아이템 이름
     public ItemType itemType; // 아이템 유형
     public Sprite itemImage; // 아이템 이미지
     public GameObject itemPrefab; //아이템 프리팹
+    public Weapons WeaponStats; //무기일 경우 무기 스크립트
     //public string weaponType; //무기 유형
     public int DropItemCount; //드랍하는 개수
     public int Value; // 아이템 가격

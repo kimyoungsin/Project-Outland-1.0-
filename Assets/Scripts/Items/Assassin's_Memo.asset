@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80a5643b11eacd439df2aa7abfed434, type: 3}
+  m_Name: Assassin's_Memo
+  m_EditorClassIdentifier: 
+  ID: 500
+  weaponTypes: 0
+  itemName: "\uC554\uC0B4\uC790\uC758 \uBA54\uBAA8"
+  itemType: 2
+  itemImage: {fileID: 21300000, guid: 2cc389bdc4476fa458a75ee10d05025b, type: 3}
+  itemPrefab: {fileID: 872998196346252512, guid: 29535361377a5494f9a2f7c5d989a1a6, type: 3}
+  WeaponStats: {fileID: 0}
+  DropItemCount: 1
+  Value: 1
+  Explain: "'\uCF5C'\uC774\uB77C\uB294 \uC790\uB97C \uC8FD\uC5EC\uB77C. \uADF8\uB294
+    '\uC2A4\uD018\uC5B4 \uD30C'\uB2E4."
+  HPEffect: 0
+  TPEffect: 0
+  MoveSpeedEfeect: 0

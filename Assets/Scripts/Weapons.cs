@@ -5,6 +5,7 @@ using UnityEngine;
 public class Weapons : MonoBehaviour
 {
     public string Name; //무기 이름
+    public Sprite WeaponImage; //무기 이미지
     public float AttackSpeed; // 공격 딜레이(공속)
     public int Damage; // 무기 대미지
     public float Critical; // 무기 치명타확률
@@ -20,8 +21,8 @@ public class Weapons : MonoBehaviour
     public float Weight; // 무게
 
     static public Weapons instance;
-    public string pistol_shot_sound;
-    public string pistol_reload_sound;
+    public string Weapon_Atk_Sound;
+    public string Weapon_Reload_Sound;
 
     public enum WeaponTypes
     {
@@ -41,22 +42,30 @@ public class Weapons : MonoBehaviour
     public Sprite WeaponSprite; //무기 이미지 스프라이트
     public GameObject BulletPrefab; // 생성할 총알
     public Transform FirePos; // 투사체 생성 위치
-    public Bullet bullet;
-    public PlayerMovement PlayerMovement;
-    //public Slot theSlot;
+    public Bullet bullet; //총알 스크립트(아군)
+    public PlayerMovement_FSM FSM;
+    public GameObject enemyBulletPrefab; // 생성할 총알(적)
+    public Enemy_Bullet enemybullet; //총알 스크립트(적)
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //theSlot = FindObjectOfType<Slot>();
-        PlayerMovement = FindObjectOfType<PlayerMovement>();
+        FSM = FindObjectOfType<PlayerMovement_FSM>();
     }
 
     public void BulletSetting()
     {
         bullet.BulletSpeed = BulletSpeed;
         bullet.BulletDamage = Damage;
+    }
+
+    public void EnemyBulletSetting()
+    {
+        Round = MaxRound;
+        enemybullet.BulletSpeed = BulletSpeed;
+        enemybullet.BulletDamage = Damage;
     }
 
 }

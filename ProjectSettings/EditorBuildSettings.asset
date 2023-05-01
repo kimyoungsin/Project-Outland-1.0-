@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BecaOutside.unity
     guid: b73517ce53553ec44be53fd77760ef33
+  - enabled: 1
+    path: Assets/Scenes/SandalleyShop.unity
+    guid: ce1ccf061785d00479b66378a86d4d5b
+  - enabled: 1
+    path: Assets/Scenes/Beca.unity
+    guid: 680fe9d5a1f40b24995a1b937f56f57d
   m_configObjects: {}

@@ -7,6 +7,7 @@ public class DialogueData : MonoBehaviour
 {
     private UIText UItext;
     public Item_Reward ItemReward;
+    public NPCShopStockList NPCShop;
 
     public Text DialogueTextObj;
     public Text DialogueNameTextObj;
@@ -223,6 +224,24 @@ public class DialogueData : MonoBehaviour
                     UItext.DialogueEnd();
                     Count = 0;
                     DialogueNPC.Attacking();
+                }
+                else if (DialogueEvent == "상점")
+                {
+                    SkipLine = data_Dialogue[Count]["스킵라인"].ToString();
+
+                    SkipLineCount = int.Parse(SkipLine);
+                    Count = SkipLineCount;
+                    print(SkipLineCount);
+
+                    NPCShop = FindObjectOfType<NPCShopStockList>();
+                    NPCShop.ShopOpen();
+
+                    DialogueNPC = GameObject.FindGameObjectWithTag("DialogueNPC").GetComponent<NPC>();
+                    DialogueNPC.DialogueStartCount = SkipLineCount;
+
+                    UItext.DialogueStopMove();
+                    UItext.DialogueEnd();
+                    Count = 0;
                 }
                 else
                 {

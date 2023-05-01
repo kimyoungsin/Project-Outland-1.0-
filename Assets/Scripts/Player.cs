@@ -28,11 +28,12 @@ public class Player : MonoBehaviour
 
     public SkillSlot skillSlot;
     SpriteRenderer spriteRenderer;
-
+    public Rigidbody2D rigid;
 
     // Start is called before the first frame update
     void Awake()
     {
+        rigid = GetComponent<Rigidbody2D>();
         skillSlot = FindObjectOfType<SkillSlot>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (instance == null)
@@ -60,16 +61,17 @@ public class Player : MonoBehaviour
             {
                 if(TPRefresh == true)
                 {
-                    tp += 0.02f;
+                    tp += 0.1f;
                 }
                 
             }
         }
-        if(Exp >= MaxExp)
+
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Lv += 1;
-            PerkPoint += 1; //퍽 포인트
-}
+            GetExp(20);
+        }
     }
 
     public void TPRefreshOff()
@@ -85,17 +87,7 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (invincible == false)
-        {
-            if (collision.gameObject.CompareTag("Enemy"))
-            {
-                SoundManager.SharedInstance.PlaySE(Player_HitSound);
-                spriteRenderer.color = new Color(1, 1, 1, 0.5f);
-                hp -= 6;
-                invincible = true;
-                Invoke("invincibleoff", invincibletime);
-            }
-        }
+
 
     }
 
@@ -117,6 +109,26 @@ public class Player : MonoBehaviour
 
         }
 
+    }
+
+    public void GetExp(int exp)
+    {
+        Debug.Log("얻은 exp: " + exp);
+        Debug.Log("현재 exp: " + Exp);
+        Exp += exp;
+        if (Exp >= MaxExp)
+        {
+            LevelUp();
+        }
+    }
+
+    public void LevelUp()
+    {
+        SoundManager.SharedInstance.PlaySE("Level_Up");
+        Exp = (Exp - MaxExp);
+        Lv += 1;
+        PerkPoint += 1; //퍽 포인트
+        MaxExp = (100 + Lv * 50);
     }
 
     public void SkillLvUp(float _up, string _name)

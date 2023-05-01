@@ -6,6 +6,7 @@ using Cinemachine;
 public class CameraScript : MonoBehaviour
 {
     static public CameraScript instance;
+    static public Transform playerPos;
 
     // Start is called before the first frame update
     void Awake()
@@ -26,5 +27,15 @@ public class CameraScript : MonoBehaviour
     public void BoundingShape(PolygonCollider2D newCol)
     {
         GetComponent<CinemachineConfiner>().m_BoundingShape2D = newCol;
+    }
+
+    private void Update()
+    {
+        if(GetComponent<CinemachineVirtualCamera>().Follow == false)
+        {
+            playerPos = FindObjectOfType<Player>().transform;
+            GetComponent<CinemachineVirtualCamera>().Follow = playerPos;
+        }
+
     }
 }

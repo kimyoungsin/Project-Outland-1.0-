@@ -28,6 +28,7 @@ public class Door : MonoBehaviour
             //Debug.Log("'E'키를 누르면 이동할 수 있습니다.");
             if(Input.GetKey(KeyCode.E))
             {
+                DoorInteractionName.InteractionName = "";
                 player.PreviousMapNum = CurSceneNum;
                 SceneManager.LoadScene(NextSceneNum);
                 //SceneManager.LoadScene("House_1");

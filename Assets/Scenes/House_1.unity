@@ -2106,13 +2106,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0323146f0ad0b4583a2abdd47fe88f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCName: "\uC2DC\uBBFC"
-  DialogueStartCount: 37
+  NPCName: "\uD1A0\uB2C8"
+  DialogueStartCount: 68
   HP: 0
   Armor: 0
   Speed: 0
   isTalk: 0
   isTalking: 0
+  isenemy: 0
 --- !u!58 &1277318835
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3299,6 +3300,7 @@ GameObject:
   - component: {fileID: 1467126679}
   - component: {fileID: 1467126678}
   - component: {fileID: 1467126677}
+  - component: {fileID: 1467126680}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3372,6 +3374,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1467126680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467126676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowDebugText: 0
+  m_ShowCameraFrustum: 1
+  m_IgnoreTimeScale: 0
+  m_WorldUpOverride: {fileID: 0}
+  m_UpdateMethod: 2
+  m_BlendUpdateMethod: 1
+  m_DefaultBlend:
+    m_Style: 1
+    m_Time: 2
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
+  m_CameraCutEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CameraActivatedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1824493420
 GameObject:
   m_ObjectHideFlags: 0

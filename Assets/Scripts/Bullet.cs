@@ -9,7 +9,6 @@ public class Bullet : MonoBehaviour
     public float BulletSpeed; //Weapons의 BulletSpeed 넘겨받는 변수
 
 
-
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -40,8 +39,14 @@ public class Bullet : MonoBehaviour
                 enemy.Hit(BulletDamage);
                 Destroy(gameObject);
             }
+
+        }
+        if (collision.gameObject.CompareTag("Object"))
+        {
+            Destroy(gameObject);
         }
 
 
     }
+
 }

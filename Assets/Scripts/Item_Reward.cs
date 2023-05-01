@@ -26,7 +26,7 @@ public class Item_Reward : MonoBehaviour
         {
             if (Rewards[i] != null)
             {
-                theInventory.AcquireItem(Rewards[i]);
+                theInventory.AcquireItem(Rewards[i], Rewards[i].DropItemCount);
             }
             else
             {

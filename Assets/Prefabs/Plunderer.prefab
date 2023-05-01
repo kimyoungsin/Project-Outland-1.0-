@@ -57,6 +57,7 @@ MonoBehaviour:
     m_Bits: 64
   Chase: {fileID: 1465682077417867550}
   target: {fileID: 0}
+  Attention: 0
 --- !u!58 &471866529153017363
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -184,7 +185,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!61 &6796957796015519778
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -245,13 +246,21 @@ MonoBehaviour:
   Damage: 8
   Exp: 0
   MovementSpeed: 0
+  isHit: 0
+  player: {fileID: 0}
   DropItemPrefab:
   - {fileID: 2344397384691596709, guid: 4c0381845ad68c74e91b5975c343f0bf, type: 3}
   - {fileID: 320934462206272593, guid: 7c77dca25023e4241994d7aaaa780df0, type: 3}
   - {fileID: 4264891239229971489, guid: 78197a16b34c3d94bb0bc35c68c987fb, type: 3}
   UnconditionalDropItemPrefab: {fileID: 1289705932527266958, guid: 3ac7cc0133b632145bf3b16c97297000, type: 3}
+  DamageText: {fileID: 3274424263782686079, guid: d548393525d81d243938aac49f692ef5, type: 3}
+  textPos: {fileID: 8940788074999216995}
   rand: 0
   DropCount: 0
+  targetTransform: {fileID: 0}
+  rigid: {fileID: 0}
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!114 &1465682077417867550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 3.5
   AlertSpeed: 0
+  CollisionDamage: 0
   FOV: {fileID: 8790498652982097040}
   direction: {x: 0, y: 0}
   Alert: 0
@@ -273,6 +283,7 @@ MonoBehaviour:
   Radius: 3.5
   AlertRadius: 5
   WarningRadius: 8
+  enemy: {fileID: 0}
   targetTransform: {fileID: 0}
   rigid: {fileID: 0}
   animator: {fileID: 4229830209053622184}

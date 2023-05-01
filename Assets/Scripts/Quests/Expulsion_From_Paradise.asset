@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33804bd6bf5a9b34e9e1698552893829, type: 3}
+  m_Name: Expulsion_From_Paradise
+  m_EditorClassIdentifier: 
+  questType: 0
+  questState: 2
+  QuestID: 1
+  QuestName: "\uB099\uC6D0\uC73C\uB85C\uBD80\uD130\uC758 \uCD94\uBC29"
+  QuestPhase: 1
+  QuestMaxPhase: 99
+  Rewards: []
+  QuestExplain: 

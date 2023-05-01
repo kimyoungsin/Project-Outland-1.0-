@@ -209,7 +209,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(isPickup)
         {
-            theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item);
+            theInventory.AcquireItem(hitInfo.transform.GetComponent<ItemPickUp>().item, hitInfo.transform.GetComponent<ItemPickUp>().item.DropItemCount);
             Destroy(hitInfo.transform.gameObject);
             UItext.InteractionName = "";
         }
