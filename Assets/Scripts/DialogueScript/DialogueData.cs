@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class DialogueData : MonoBehaviour
 {
-    private UIText UItext;
+    public UIText UItext;
+    public QuestManager questmanager; //퀘스트 수주 및 관리용
     public Item_Reward ItemReward;
     public NPCShopStockList NPCShop;
 
@@ -42,6 +43,8 @@ public class DialogueData : MonoBehaviour
     public NPC DialogueNPC; // 현재 대화중인 npc
     public bool CanDialogue = true; //true면 키 눌러서 대화 넘기기 가능
 
+    string QuestID; // CSV에 있는 '퀘스트'칸의 숫자 저장
+    int QuestNumber; // 숫자로 변경 후 저장
 
     void Start()
     {
@@ -61,11 +64,15 @@ public class DialogueData : MonoBehaviour
         DialogueNameTextObj.text = data_Dialogue[Count]["이름"].ToString();
         DialogueTextObj.text = "" + data_Dialogue[Count]["대화"].ToString();
         DialogueEvent = data_Dialogue[Count]["이벤트"].ToString();
-        DialogueSelectEventID = data_Dialogue[Count]["이벤트시작Num"].ToString();
+        DialogueSelectEventID = data_Dialogue[Count]["선택지"].ToString();
         DialogueSelectNum = data_Dialogue[Count]["선택지개수"].ToString();
-        
+        QuestID = data_Dialogue[Count]["퀘스트ID"].ToString();
 
-        if(CanDialogue == true)
+
+
+
+
+        if (CanDialogue == true)
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
@@ -91,6 +98,38 @@ public class DialogueData : MonoBehaviour
                     UItext.DialogueEnd();
                     Count = 0;
                 }
+                else if (DialogueEvent == "종료페이드")
+                {
+                    SkipLine = data_Dialogue[Count]["스킵라인"].ToString();
+
+                    SkipLineCount = int.Parse(SkipLine);
+                    Count = SkipLineCount;
+                    print(SkipLineCount);
+
+                    DialogueNPC = GameObject.FindGameObjectWithTag("DialogueNPC").GetComponent<NPC>();
+                    DialogueNPC.DialogueStartCount = SkipLineCount;
+                    DialogueNPC.FadeInStart();
+
+                    UItext.DialogueStopMove();
+                    UItext.DialogueEnd();
+                    Count = 0;
+                }
+                else if (DialogueEvent == "종료기습")
+                {
+                    SkipLine = data_Dialogue[Count]["스킵라인"].ToString();
+
+                    SkipLineCount = int.Parse(SkipLine);
+                    Count = SkipLineCount;
+                    print(SkipLineCount);
+
+                    DialogueNPC = GameObject.FindGameObjectWithTag("DialogueNPC").GetComponent<NPC>();
+                    DialogueNPC.DialogueStartCount = SkipLineCount;
+                    DialogueNPC.AmbushEvent();
+
+                    UItext.DialogueStopMove();
+                    UItext.DialogueEnd();
+                    Count = 0;
+                }
                 else if (DialogueEvent == "잠금해제")
                 {
                     SkipLine = data_Dialogue[Count]["스킵라인"].ToString();
@@ -101,11 +140,11 @@ public class DialogueData : MonoBehaviour
 
                     DialogueNPC = GameObject.FindGameObjectWithTag("DialogueNPC").GetComponent<NPC>();
                     DialogueNPC.DialogueStartCount = SkipLineCount;
+                    DialogueNPC.Opening();
 
                     UItext.DialogueStopMove();
                     UItext.DialogueEnd();
                     Count = 0;
-                    DialogueNPC.Opening();
                 }
                 else if (DialogueEvent == "아이템")
                 {
@@ -242,6 +281,45 @@ public class DialogueData : MonoBehaviour
                     UItext.DialogueStopMove();
                     UItext.DialogueEnd();
                     Count = 0;
+                }
+                else if (DialogueEvent == "퀘스트수주")
+                {
+                    QuestNumber = int.Parse(QuestID);
+                    for (int i = 0; i < 1; i++)
+                    {
+                        if (questmanager.questslots[i].quest != null)
+                        {
+                            questmanager.questslots[i].quest = DialogueNPC.quest;
+                        }
+                        else
+                        {
+                            //Debug.Log("오류! 퀘스트 목록 넘침!!");
+                        }
+                    }
+                   
+
+                    Count += 1;
+                }
+                else if (DialogueEvent == "퀘스트갱신")
+                {
+                    QuestNumber = int.Parse(QuestID);
+                    Debug.Log("퀘스트 ID: " + QuestNumber);
+                    for (int i = 0; i < 1; i++)
+                    {
+                        if (questmanager.questslots[i].quest.QuestID == QuestNumber)
+                        {
+                            Debug.Log("퀘스트 페이즈 증가. ");
+                            questmanager.Number[i] += 1;
+                            questmanager.questslots[i].QuestPhaseUp();
+                        }
+                        else
+                        {
+                           
+                        }
+                    }
+
+
+                    Count += 1;
                 }
                 else
                 {

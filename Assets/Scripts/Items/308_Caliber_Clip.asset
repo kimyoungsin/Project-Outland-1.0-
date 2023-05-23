@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 11
   weaponTypes: 0
-  itemName: 308_Caliber
+  itemName: ".308 \uAD6C\uACBD \uD0C4"
   itemType: 4
   itemImage: {fileID: 21300000, guid: debd0d74fc2de704b8976949295cec3a, type: 3}
   itemPrefab: {fileID: 320934462206272593, guid: 7c77dca25023e4241994d7aaaa780df0, type: 3}

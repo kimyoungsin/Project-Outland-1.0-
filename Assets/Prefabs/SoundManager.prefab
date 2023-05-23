@@ -66,6 +66,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 096ec58aa97f31546a019bb22ff5b478, type: 3}
   - name: FNV_huntingrifle_reload
     clip: {fileID: 8300000, guid: ffbaf903f79744b42b259662a970f5ca, type: 3}
+  - name: FNV_9mm_SMG_reload
+    clip: {fileID: 8300000, guid: 12456c98d5bf0784ab8ab8ed98a65339, type: 3}
+  - name: FNV_Automatic_rifle_Fire
+    clip: {fileID: 8300000, guid: 5bea18aba370c9148a767184ab2aea66, type: 3}
   - name: Shop_Buy
     clip: {fileID: 8300000, guid: 536ac92c05f1cbe4fb0bfe5b027d3e70, type: 3}
   - name: Shop_Buy_Fail

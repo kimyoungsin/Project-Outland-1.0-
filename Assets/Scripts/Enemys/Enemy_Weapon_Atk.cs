@@ -6,6 +6,7 @@ public class Enemy_Weapon_Atk : MonoBehaviour
 {
     public float MovementSpeed; //기본이속
     public float AlertSpeed; //전투시 이속
+
     public FieldOfView FOV; //개체 시야
     public Vector2 direction; //이동방향
     public bool Alert = false; //경계상태
@@ -14,11 +15,11 @@ public class Enemy_Weapon_Atk : MonoBehaviour
     public float AlertRadius; //경계 시 시야범위
     public float WarningRadius; //발각 시 시야범위
 
-    public Transform targetTransform = null;
+    public Transform targetTransform;
     public Rigidbody2D rigid;
     public Animator animator;
 
-    public Enemy_Weapon_Manager weapon;
+    public Enemy_Weapon_Manager weaponmanager;
     public bool isMove = true;
     Vector2 movement = new Vector2(0,0);
 
@@ -34,35 +35,37 @@ public class Enemy_Weapon_Atk : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log(Vector2.Distance(weapon.MeleePos.transform.position, targetTransform.position));
-        if (targetTransform != null && weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Unarmd || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Onehand || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Twohand || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Fist)
+        
+        if (targetTransform != null)
         {
-            if(isMove)
+            if (weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Unarmd || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Onehand || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Twohand || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Fist)
+            {
+                if (isMove)
+                {
+                    Vector2 dir = targetTransform.position - transform.position;
+                    transform.Translate(dir.normalized * MovementSpeed * Time.deltaTime);
+                    animator.SetFloat("MoveX", dir.x);
+                    animator.SetFloat("MoveY", dir.y);
+                }
+            }
+            else if(weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.OnehandGun || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.TwohandGun || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.DoubleGun || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.HeavyArms)
             {
                 Vector2 dir = targetTransform.position - transform.position;
-                transform.Translate(dir.normalized * MovementSpeed * Time.deltaTime);
-                animator.SetFloat("MoveX", dir.x);
-                animator.SetFloat("MoveY", dir.y);
+                transform.Translate(dir.normalized * 0.000001f);
+                animator.SetFloat("LastMoveX", dir.x);
+                animator.SetFloat("LastMoveY", dir.y);
             }
 
 
         }
-        else if (targetTransform != null && weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.OnehandGun || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.TwohandGun || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.DoubleGun || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.HeavyArms)
-        {
-            Vector2 dir = targetTransform.position - transform.position;
-            //transform.Translate(dir.normalized * MovementSpeed * Time.deltaTime);
-            animator.SetFloat("LastMoveX", dir.x);
-            animator.SetFloat("LastMoveY", dir.y);
-            
 
-        }
         if(Input.GetKeyDown(KeyCode.H))
         {
-            StartCoroutine(weapon.GunFire(targetTransform));
+            StartCoroutine(weaponmanager.AttackAI());
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
-            StartCoroutine(weapon.ReroldOn());
+            StartCoroutine(weaponmanager.ReroldOn());
         }
 
     }
@@ -71,22 +74,26 @@ public class Enemy_Weapon_Atk : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+           
+
             FOV.target = collision.gameObject.transform;
             targetTransform = collision.gameObject.transform;
             Warning = true;
 
-            weapon.PlayerPos = targetTransform;
+            weaponmanager.PlayerPos = targetTransform;
 
-            if (targetTransform != null && weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Unarmd || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Onehand || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Twohand || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Fist)
+            if (!enabled) return;
+
+            if (targetTransform != null && weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Unarmd || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Onehand || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Twohand || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.Fist)
             {
                 isMove = true;
-                StartCoroutine(weapon.UnarmdAttack(direction.x, direction.y));
+                StartCoroutine(weaponmanager.AttackAI());
 
 
             }
-            else if (targetTransform != null && weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.OnehandGun || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.TwohandGun || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.DoubleGun || weapon.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.HeavyArms)
+            else if (targetTransform != null && weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.OnehandGun || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.TwohandGun || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.DoubleGun || weaponmanager.CurrentWeapon.weaponTypes == Weapons.WeaponTypes.HeavyArms)
             {
-                StartCoroutine(weapon.GunFire(targetTransform));
+                StartCoroutine(weaponmanager.AttackAI());
 
 
             }
@@ -118,7 +125,7 @@ public class Enemy_Weapon_Atk : MonoBehaviour
             animator.SetFloat("MoveY", 0);
             GetComponent<CircleCollider2D>().radius = Radius;
 
-            weapon.PlayerPos = null;
+            weaponmanager.PlayerPos = null;
         }
     }
 
@@ -163,5 +170,10 @@ public class Enemy_Weapon_Atk : MonoBehaviour
     public void Kill()
     {
         Destroy(gameObject);
+    }
+
+    public void atk()
+    {
+        StartCoroutine(weaponmanager.AttackAI());
     }
 }

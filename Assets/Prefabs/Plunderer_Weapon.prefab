@@ -80,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SwitchDelay: 1
   Switchable: 1
-  Enemy: {fileID: 8994977854714417406}
+  enemy: {fileID: 8994977854714417406}
   CurrentWeaponInstance: {fileID: 4225240846090116211, guid: 8dfa371884d47eb4f8d185e7958352ed, type: 3}
   CurrentWeapon: {fileID: 6332096809916716136, guid: 8dfa371884d47eb4f8d185e7958352ed, type: 3}
   FistInstance: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   isAtk: 0
   BulletCount: 20
   EnemyAtk: {fileID: 7080224264429065432}
-  gun: {fileID: 0}
+  rand: 0
 --- !u!1 &2722288842811303632
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3755022975630413909}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d53fb28c0fbcfcc459b90cc0218575ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 18465f4d469024b4fac37ca5fa1bb07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DebugMode: 1
@@ -427,14 +427,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6928332184576770721}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2d601ebb07a284da6c3cc8eed70f08, type: 3}
+  m_Script: {fileID: 11500000, guid: c44afce0542f25042ad9815061de912f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 40
-  Maxhp: 40
-  Armor: 0
+  hp: 35
+  Maxhp: 35
+  Armor: 1
   Damage: 8
-  Exp: 0
+  Exp: 10
   MovementSpeed: 4
   isHit: 0
   player: {fileID: 0}
@@ -448,9 +448,9 @@ MonoBehaviour:
   rand: 0
   DropCount: 0
   targetTransform: {fileID: 0}
-  rigid: {fileID: 0}
+  rigid: {fileID: 1208828179811755414}
   animator: {fileID: 4509606450048035191}
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 2599661001282733677}
 --- !u!114 &7080224264429065432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,7 +475,7 @@ MonoBehaviour:
   targetTransform: {fileID: 0}
   rigid: {fileID: 1208828179811755414}
   animator: {fileID: 4509606450048035191}
-  weapon: {fileID: 315616585276454319}
+  weaponmanager: {fileID: 315616585276454319}
   isMove: 0
 --- !u!95 &4509606450048035191
 Animator:

@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questType: 1
   questState: 1
-  QuestID: 0
+  QuestID: 2
   QuestName: Thorn_Of_Bitch
   QuestPhase: 1
   QuestMaxPhase: 0
   Rewards: []
-  QuestExplain: 
+  QuestExplain: "\uC0CC\uB4E4\uB9AC\uC758 \uC2DC\uC7A5\uC5D0\uAC8C\uC11C \uBC1B\uB294
+    \uD018\uC2A4\uD2B8. \uB0A8\uC11C\uCABD\uC758 \uC3DC\uB4E4\uC744 \uCC98\uB9AC\uD574\uC57C\uD568"

@@ -62,6 +62,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 04db7cfddf2603145943e1e425523129, type: 2}
   - {fileID: 11400000, guid: a3e4df8dcc0454b47955688b5ca649e2, type: 2}
   - {fileID: 11400000, guid: 5335a52828e4e104f8fe0aa692ea9002, type: 2}
+  - {fileID: 11400000, guid: acb176f562d62fb45bc513f21ff49d4f, type: 2}
+  - {fileID: 11400000, guid: 30fd912fca239ee458b7e67893db0362, type: 2}
+  - {fileID: 11400000, guid: d5c90358249374f43b7e630b330c5469, type: 2}
+  - {fileID: 11400000, guid: f3c3c4977b2556b42b981f271acd9755, type: 2}
+  - {fileID: 11400000, guid: 3c8751720c57fca408b518f80533d739, type: 2}
+  QuestData: {fileID: 0}
+  SkillData: {fileID: 0}
   PlayerPrefab: {fileID: 390426220772314400, guid: b2816c48258a4c04b9dd3f937d8b7e9c, type: 3}
   UICanvasPrefab: {fileID: 4528783808445464819, guid: d949d7e19b4e41a429ad4bb11e6f88d7, type: 3}
   CinemacinePrefab: {fileID: 4905744137093479883, guid: 26d7ccf3bc8699d4a912be4bb34b198b, type: 3}

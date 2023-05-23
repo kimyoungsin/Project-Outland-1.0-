@@ -115,7 +115,7 @@ MonoBehaviour:
   Weight: 6
   Weapon_Atk_Sound: FNV_varmintrifle_fire
   Weapon_Reload_Sound: FNV_huntingrifle_reload
-  weaponTypes: 5
+  weaponTypes: 6
   WeaponSprite: {fileID: 21300000, guid: 695c2ddf42629fc4e958fd4b16485705, type: 3}
   BulletPrefab: {fileID: 4728531316013038670, guid: 1c121b22ae6f6fd4a833db314b4179e0, type: 3}
   FirePos: {fileID: 4106015354966490450}

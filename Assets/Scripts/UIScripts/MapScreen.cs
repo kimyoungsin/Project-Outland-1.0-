@@ -24,6 +24,7 @@ public class MapScreen : MonoBehaviour
     public WeaponManager weaponManager;
     public Inventory theInventory;
     public MapData mapData;
+    public UIText UItext;
 
 
     void Start()
@@ -33,6 +34,7 @@ public class MapScreen : MonoBehaviour
         weaponManager = FindObjectOfType<WeaponManager>();
         theInventory = FindObjectOfType<Inventory>();
         mapData = FindObjectOfType<MapData>();
+        UItext = FindObjectOfType<UIText>();
     }
 
     
@@ -69,6 +71,7 @@ public class MapScreen : MonoBehaviour
         weaponManager.StopAtk();
         WorldMapImage.SetActive(false);
         OtherUI.SetActive(true);
+        UItext.FestTravel();
     }
 
     public void CancelFestTravel()

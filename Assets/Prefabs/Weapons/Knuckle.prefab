@@ -112,7 +112,7 @@ MonoBehaviour:
   Round: 0
   UseRound: 0
   Spread: 0
-  Weight: 0
+  Weight: 1
   Weapon_Atk_Sound: FistAtk
   Weapon_Reload_Sound: 
   weaponTypes: 1

@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1012901137434358884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3064425019375701577}
+  m_Layer: 0
+  m_Name: DamageHUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3064425019375701577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012901137434358884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.52, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1422214154108058417}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422214153095184227
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +42,7 @@ GameObject:
   - component: {fileID: 1422214153095184230}
   - component: {fileID: 1422214153095184225}
   - component: {fileID: 1422214153095184224}
-  - component: {fileID: 1422214153095184229}
+  - component: {fileID: 4376431925126621745}
   - component: {fileID: 1422214153095184235}
   - component: {fileID: 1422214153095184234}
   - component: {fileID: 1422214153095184228}
@@ -111,7 +142,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1422214153095184229
+--- !u!114 &4376431925126621745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,25 +151,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1422214153095184227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2d601ebb07a284da6c3cc8eed70f08, type: 3}
+  m_Script: {fileID: 11500000, guid: c44afce0542f25042ad9815061de912f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 25
   Maxhp: 25
   Armor: 0
   Damage: 6
-  Exp: 0
+  Exp: 7
   MovementSpeed: 0
+  isHit: 0
   player: {fileID: 0}
   DropItemPrefab:
-  - {fileID: 2344397384691596709, guid: 4c0381845ad68c74e91b5975c343f0bf, type: 3}
   - {fileID: 4264891239229971489, guid: 78197a16b34c3d94bb0bc35c68c987fb, type: 3}
   - {fileID: 7991404193749219327, guid: 9aef70d197597ed4981cdb6a3b78bd23, type: 3}
+  - {fileID: 2344397384691596709, guid: 4c0381845ad68c74e91b5975c343f0bf, type: 3}
   UnconditionalDropItemPrefab: {fileID: 1289705932527266958, guid: 3ac7cc0133b632145bf3b16c97297000, type: 3}
-  DamageText: {fileID: 1586681287650923477, guid: d32029a09522ace44a50f9b6d58191bb, type: 3}
-  textPos: {fileID: 1422214153095184230}
+  DamageText: {fileID: 3274424263782686079, guid: d548393525d81d243938aac49f692ef5, type: 3}
+  textPos: {fileID: 3064425019375701577}
   rand: 0
-  DropCount: 1
+  DropCount: 0
   targetTransform: {fileID: 0}
   rigid: {fileID: 0}
   animator: {fileID: 0}
@@ -259,6 +291,7 @@ Transform:
   m_Children:
   - {fileID: 1422214154323569186}
   - {fileID: 1422214153095184230}
+  - {fileID: 3064425019375701577}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

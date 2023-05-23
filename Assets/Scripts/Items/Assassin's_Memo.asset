@@ -22,7 +22,7 @@ MonoBehaviour:
   DropItemCount: 1
   Value: 1
   Explain: "'\uCF5C'\uC774\uB77C\uB294 \uC790\uB97C \uC8FD\uC5EC\uB77C. \uADF8\uB294
-    '\uC2A4\uD018\uC5B4 \uD30C'\uB2E4."
+    '\uC2A4\uD018\uC5B4 \uD30C'\uB2E4.\n-\uC911\uC704"
   HPEffect: 0
   TPEffect: 0
   MoveSpeedEfeect: 0

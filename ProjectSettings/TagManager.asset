@@ -55,20 +55,20 @@ TagManager:
   - name: Structure
     uniqueID: 1010042359
     locked: 0
+  - name: Weapons
+    uniqueID: 3593104829
+    locked: 0
+  - name: Wall
+    uniqueID: 650994747
+    locked: 0
   - name: Objects
     uniqueID: 1493502489
     locked: 0
   - name: NPC
     uniqueID: 2177490935
     locked: 0
-  - name: Weapons
-    uniqueID: 3593104829
-    locked: 0
   - name: PlayerLayer
     uniqueID: 4044367583
-    locked: 0
-  - name: Wall
-    uniqueID: 650994747
     locked: 0
   - name: FrontObjects
     uniqueID: 2003566265

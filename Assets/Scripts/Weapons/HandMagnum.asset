@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80a5643b11eacd439df2aa7abfed434, type: 3}
+  m_Name: HandMagnum
+  m_EditorClassIdentifier: 
+  ID: 200
+  weaponTypes: 5
+  itemName: "\uD578\uB4DC \uB9E4\uADF8\uB118\u2605"
+  itemType: 0
+  itemImage: {fileID: 21300000, guid: 3e74b47d68eacb5498627eaae20d1a5d, type: 3}
+  itemPrefab: {fileID: 2520339996747261436, guid: b946e5a4bfd626b479f761e267753e66, type: 3}
+  WeaponStats: {fileID: 7429397075824054150, guid: b946e5a4bfd626b479f761e267753e66, type: 3}
+  DropItemCount: 1
+  Value: 500
+  Explain: "\uC804\uC7C1 \uC804 \uAD70\uC0AC\uAE30\uC5C5 '\uAE38\uAC00\uBA54\uC2A4'\uC0AC\uC5D0\uC11C
+    \uB9CC\uB4E0 \uB300\uC804\uCC28\uC6A9 \uB9E4\uADF8\uB118. .44 \uB9E4\uADF8\uB118
+    \uD0C4\uC744 \uC0AC\uC6A9\uD574 \uB450\uAEBC\uC6B4 \uC7A5\uAC11\uB3C4 \uB6AB\uC744
+    \uC218 \uC788\uB2E4."
+  HPEffect: 0
+  TPEffect: 0
+  MoveSpeedEfeect: 0

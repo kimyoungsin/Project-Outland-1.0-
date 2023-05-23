@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIText : MonoBehaviour
 {
@@ -24,6 +25,11 @@ public class UIText : MonoBehaviour
     static public UIText instance;
     public NPC DialogueNPC;
     public TutorialUI tutorialUI; //튜토리얼 표시 용 UI
+
+    //팝업창 관리
+    public GameObject PopUpUI; //아이템 획득, 퀘스트 갱신 등 표시용 팝업ui
+    public TMP_Text PopUpText; //팝업 텍스트
+    public Animator PopUpUIAni;
 
     //인벤토리, 퀘스트, 스킬트리 등 ui총 관리
     public  bool inventoryActivated = false; // 인벤토리 활성화 여부(true면 다른 행동, 키입력 멈춤)
@@ -261,5 +267,64 @@ public class UIText : MonoBehaviour
         }
     }
 
+    public void FestTravel()
+    {
+        QuestUIActivated = false;
+        inventoryActivated = false;
+        MapActivated = false;
+        SkillTreeActivated = false;
+        QuestScreenObj.CloseQuest();
+        WorldMapImage.CloseMapScreen();
+        SkillTreeUI.CloseSkillTree();
+        InventoryBase.CloseInventory();
+    }
 
+
+    public void PopUpStart(string text)
+    {
+        PopUpUIAni.SetBool("isShow", true);
+        PopUpText.text = " " + text;
+        StartCoroutine(PopUpEnd(2f));
+    }
+
+    public void QuestAcceptPopUpStart(string text)
+    {
+        PopUpUIAni.SetBool("isShow", true);
+        PopUpText.text = "퀘스트 시작: " + text;
+        StartCoroutine(PopUpEnd(4f));
+    }
+    public void QuestPopUpStart(string text)
+    {
+        PopUpUIAni.SetBool("isShow", true);
+        PopUpText.text = "퀘스트 갱신: " + text;
+        StartCoroutine(PopUpEnd(4f));
+    }
+
+    public void QuestEndStart(string text)
+    {
+        PopUpUIAni.SetBool("isShow", true);
+        PopUpText.text = "퀘스트 완료: " + text;
+        StartCoroutine(PopUpEnd(4f));
+    }
+
+    public void LevelUpPopUpStart(int lv)
+    {
+        PopUpUIAni.SetBool("isShow", true);
+        PopUpText.text = "레벨 업! (" + (lv - 1) + "-> " + lv + ")";
+        StartCoroutine(PopUpEnd(4f));
+    }
+
+    public IEnumerator PopUpEnd(float time)
+    {
+        yield return new WaitForSeconds(time);
+        PopUpUIAni.SetBool("isShow", false);
+    }
+
+    /*
+    public IEnumerator QuestPopUpEnd()
+    {
+        yield return new WaitForSeconds(4f);
+        PopUpUIAni.SetBool("isShow", false);
+    }
+    */
 }

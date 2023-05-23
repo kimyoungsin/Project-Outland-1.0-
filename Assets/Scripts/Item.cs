@@ -24,7 +24,9 @@ public class Item : ScriptableObject
         Onehand,
         Twohand,
         OnehandGun,
+        OnehandAutoGun,
         TwohandGun,
+        TwohandAutoGun,
         DoubleGun,
         Gun_Tlet,
         HeavyArms

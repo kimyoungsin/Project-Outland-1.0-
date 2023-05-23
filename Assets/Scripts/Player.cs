@@ -26,16 +26,21 @@ public class Player : MonoBehaviour
     static public Player instance;
     public string Player_HitSound;
 
-    public SkillSlot skillSlot;
     SpriteRenderer spriteRenderer;
     public Rigidbody2D rigid;
+
+    public UIText uitext;
+    public SkillSlot skillSlot;
 
     // Start is called before the first frame update
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
-        skillSlot = FindObjectOfType<SkillSlot>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        skillSlot = FindObjectOfType<SkillSlot>();
+        uitext = FindObjectOfType<UIText>();
+
         if (instance == null)
         {
             DontDestroyOnLoad(this.gameObject);
@@ -67,6 +72,10 @@ public class Player : MonoBehaviour
             }
         }
 
+        if (hp > Maxhp)
+        {
+            hp = Maxhp;
+        }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -124,6 +133,7 @@ public class Player : MonoBehaviour
 
     public void LevelUp()
     {
+        uitext.LevelUpPopUpStart(Lv);
         SoundManager.SharedInstance.PlaySE("Level_Up");
         Exp = (Exp - MaxExp);
         Lv += 1;

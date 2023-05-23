@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4642314095897701935}
   - component: {fileID: 4642314095897702097}
   - component: {fileID: 7143633183157862396}
+  - component: {fileID: 514242126473067787}
   m_Layer: 0
   m_Name: Scardor
   m_TagString: Enemy
@@ -164,21 +165,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 4642314095897701929}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2d601ebb07a284da6c3cc8eed70f08, type: 3}
+  m_Script: {fileID: 11500000, guid: c44afce0542f25042ad9815061de912f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 30
-  Maxhp: 30
+  hp: 15
+  Maxhp: 15
   Armor: 0
-  Damage: 8
-  Exp: 0
-  MovementSpeed: 0
+  Damage: 7
+  Exp: 6
+  MovementSpeed: 3
   isHit: 0
   player: {fileID: 0}
   DropItemPrefab:
+  - {fileID: 7991404193749219327, guid: 9aef70d197597ed4981cdb6a3b78bd23, type: 3}
   - {fileID: 2344397384691596709, guid: 4c0381845ad68c74e91b5975c343f0bf, type: 3}
-  - {fileID: 320934462206272593, guid: 7c77dca25023e4241994d7aaaa780df0, type: 3}
-  - {fileID: 4264891239229971489, guid: 78197a16b34c3d94bb0bc35c68c987fb, type: 3}
+  - {fileID: 0}
   UnconditionalDropItemPrefab: {fileID: 1289705932527266958, guid: 3ac7cc0133b632145bf3b16c97297000, type: 3}
   DamageText: {fileID: 3274424263782686079, guid: d548393525d81d243938aac49f692ef5, type: 3}
   textPos: {fileID: 8317049277287446311}
@@ -195,7 +196,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4642314095897701929}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfbefe50bc1300b42af0529846659e31, type: 3}
   m_Name: 
@@ -213,7 +214,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   targetTransform: {fileID: 0}
   rigid: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 7143633183157862396}
 --- !u!95 &7143633183157862396
 Animator:
   serializedVersion: 4
@@ -234,6 +235,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &514242126473067787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4642314095897701929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756bb07040767fa4594a978b669c5933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeed: 3
+  AlertSpeed: 0
+  CollisionDamage: 8
+  FOV: {fileID: 2574380227262074248}
+  direction: {x: 0, y: 0}
+  Alert: 0
+  Warning: 0
+  Radius: 3.5
+  AlertRadius: 5
+  WarningRadius: 7
+  enemy: {fileID: 0}
+  targetTransform: {fileID: 0}
+  rigid: {fileID: 0}
+  animator: {fileID: 0}
+  rand: 0
+  isMove: 0
 --- !u!1 &8718580738103611486
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +336,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8903481408064715349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d53fb28c0fbcfcc459b90cc0218575ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 18465f4d469024b4fac37ca5fa1bb07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DebugMode: 1

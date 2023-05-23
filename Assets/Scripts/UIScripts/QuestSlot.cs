@@ -12,6 +12,7 @@ public class QuestSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     public int QuestPhase; //현재 퀘스트 진행도
     public Text questNameText; // 퀘스트 제목 텍스트
     public Inventory theInventory;
+    public UIText uitext;
     public Image image;
     public Color color;
 
@@ -21,6 +22,7 @@ public class QuestSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     {
         theInventory = FindObjectOfType<Inventory>();
         questManager = FindObjectOfType<QuestManager>();
+        uitext = FindObjectOfType<UIText>();
         image = GetComponent<Image>();
     }
 
@@ -40,11 +42,6 @@ public class QuestSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         }
     }
 
-    public void QuestAccept()
-    {
-        questID = quest.QuestID;
-    }
-
 
     //PointerEventData: 마우스 혹은 터치 입력 이벤트에 관한 정보들이 담겨 있다. (이벤트가 들어온 버튼, 클릭 수, 마우스 위치, 현재 마우스 움직이고 있는지 여부)
     public void OnPointerClick(PointerEventData eventData)
@@ -55,7 +52,7 @@ public class QuestSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
             Debug.Log("퀘스트 이름 클릭했다!!");
             if (quest != null)
             {
-                questManager.QuestTextOn(QuestPhase);
+                questManager.QuestTextOn(questID);
             }
 
         }
@@ -70,6 +67,19 @@ public class QuestSlot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
     public void OnPointerExit(PointerEventData eventData3)
     {
         
+    }
+
+    public void QuestAccept()
+    {
+        questID = quest.QuestID;
+        uitext.QuestAcceptPopUpStart(quest.QuestName);
+    }
+
+    public void QuestPhaseUp()
+    {
+        QuestPhase += 1;
+        quest.QuestPhase += 1;
+        uitext.QuestPopUpStart(quest.QuestName);
     }
 
 

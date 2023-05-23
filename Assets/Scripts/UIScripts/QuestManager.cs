@@ -10,6 +10,7 @@ public class QuestManager : MonoBehaviour
 {
     public QuestUI questUI;
     public QuestSlot[] questslots; //Äù½ºÆ® ¸ñ·Ïµé
+    public GameObject[] questObjs; //Äù½ºÆ® ¸ñ·Ïµé(¿ÀºêÁ§Æ®, on/off ¿ë)
     public Text[] QuestNameTextObj; // Äù½ºÆ® Á¦¸ñ
     public TMP_Text QuestLogObj; //Äù½ºÆ® ·Î±×
     public TMP_Text QuestGoalObj; //Äù½ºÆ® ¸ñÇ¥ ÅØ½ºÆ®
@@ -57,21 +58,40 @@ public class QuestManager : MonoBehaviour
         if(questslots[0].quest == null)// Äù½ºÆ®°¡ ºñ¾îÀÖÀ¸¸é ÅØ½ºÆ® °ø¹éÃ³¸®
         {
             QuestNameTextObj[0].text = "";
+            questObjs[0].SetActive(false);
         }
         else
         {
             QuestNameTextObj[0].text = data_Quest[questslots[0].questID]["Äù½ºÆ®"].ToString();
+            questObjs[0].SetActive(true);
         }
         if (questslots[1].quest == null)
         {
             QuestNameTextObj[1].text = "";
+            questObjs[1].SetActive(false);
         }
         else
         {
             QuestNameTextObj[1].text = data_Quest[questslots[1].questID]["Äù½ºÆ®"].ToString();
+            questObjs[1].SetActive(true);
+        }
+        if (questslots[2].quest == null)
+        {
+            QuestNameTextObj[2].text = "";
+            questObjs[2].SetActive(false);
+        }
+        else
+        {
+            QuestNameTextObj[2].text = data_Quest[questslots[1].questID]["Äù½ºÆ®"].ToString();
+            questObjs[2].SetActive(true);
         }
 
 
+
+    }
+
+    public void QuestEnter()
+    {
 
     }
 

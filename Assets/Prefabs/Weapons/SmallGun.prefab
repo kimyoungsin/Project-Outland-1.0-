@@ -112,7 +112,7 @@ MonoBehaviour:
   Round: 10
   UseRound: 0
   Spread: 1
-  Weight: 5
+  Weight: 3
   Weapon_Atk_Sound: FNV_9mm_fire
   Weapon_Reload_Sound: FNV_9mm_reload
   weaponTypes: 4

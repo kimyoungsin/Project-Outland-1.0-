@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3059704776646827110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4226295374833042078}
+  m_Layer: 0
+  m_Name: DamageHud
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4226295374833042078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3059704776646827110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.437, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3332240680402142056}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3902974030469426293
 GameObject:
   m_ObjectHideFlags: 0
@@ -36,6 +67,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4698923851028666490}
+  - {fileID: 4226295374833042078}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -78,7 +110,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2117476361
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 1103707859, guid: 901309f09462f0744809f847c1b7c33e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -163,24 +195,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 3902974030469426293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2d601ebb07a284da6c3cc8eed70f08, type: 3}
+  m_Script: {fileID: 11500000, guid: c44afce0542f25042ad9815061de912f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 30
   Maxhp: 30
-  Armor: 0
-  Damage: 8
-  Exp: 0
+  Armor: 1
+  Damage: 9
+  Exp: 20
   MovementSpeed: 0
   isHit: 0
   player: {fileID: 0}
   DropItemPrefab:
-  - {fileID: 2344397384691596709, guid: 4c0381845ad68c74e91b5975c343f0bf, type: 3}
-  - {fileID: 320934462206272593, guid: 7c77dca25023e4241994d7aaaa780df0, type: 3}
-  - {fileID: 4264891239229971489, guid: 78197a16b34c3d94bb0bc35c68c987fb, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   UnconditionalDropItemPrefab: {fileID: 872998196346252512, guid: 29535361377a5494f9a2f7c5d989a1a6, type: 3}
   DamageText: {fileID: 3274424263782686079, guid: d548393525d81d243938aac49f692ef5, type: 3}
-  textPos: {fileID: 3332240680402142056}
+  textPos: {fileID: 4226295374833042078}
   rand: 0
   DropCount: 0
   targetTransform: {fileID: 0}
@@ -201,7 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 3.5
   AlertSpeed: 0
-  CollisionDamage: 0
+  CollisionDamage: 8
   FOV: {fileID: 3158272037220617371}
   direction: {x: 0, y: 0}
   Alert: 0
@@ -275,7 +307,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7066362057168207489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d53fb28c0fbcfcc459b90cc0218575ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 18465f4d469024b4fac37ca5fa1bb07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DebugMode: 1

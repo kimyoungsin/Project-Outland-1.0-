@@ -7,7 +7,7 @@ public class TutorialUI : MonoBehaviour
 {
     public TMP_Text Tutorialext; // 튜토리얼 ui 텍스트
     public Animator UIani;
-    public float UIHideSpeed = 8f; //UI표시 후 사라지는 시간 설정
+    public float UIHideSpeed = 7f; //UI표시 후 사라지는 시간 설정
 
     void Start()
     {

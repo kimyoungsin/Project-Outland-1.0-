@@ -66,7 +66,7 @@ public class WeaponManager : MonoBehaviour
 
             }
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))//일반적인 반자동식 공격
             {
                 Vector2 MousePos = Input.mousePosition;
                 Debug.Log(MousePos);
@@ -153,7 +153,70 @@ public class WeaponManager : MonoBehaviour
                 }
             }
 
-            if(Input.GetMouseButton(1))
+            if (Input.GetMouseButton(0)) //자동화기(연사)
+            {
+                
+                if (FSM.WeaponShow == false)
+                {
+                    if (CurrentWeapon.weaponTypes == Weapons.WeaponTypes.OnehandAutoGun)
+                    {
+                        FSM.Anim.SetBool("isOnehandGun", true);
+                    }
+                    else if (CurrentWeapon.weaponTypes == Weapons.WeaponTypes.TwohandAutoGun)
+                    {
+                        FSM.Anim.SetBool("isTwohandGun", true);
+                    }
+                    FSM.WeaponShow = true;
+                }
+                else
+                {
+
+                    if (CurrentWeapon.weaponTypes == Weapons.WeaponTypes.OnehandAutoGun)
+                    {
+                        Vector2 MousePos = Input.mousePosition;
+                        Debug.Log(MousePos);
+                        FSM.Anim.SetBool("isWalk", false);
+
+                        CurrentWeapon.BulletSetting(); //weapon의 BulletSetting로 발사하는 탄환의 대미지, 탄속 등 설정
+                        FSM.Anim.SetBool("isOnehandGun", true);
+                        if (Attackable == true)
+                        {
+                            if (CurrentWeapon.Round > 0)
+                            {
+                                SoundManager.SharedInstance.PlaySE(CurrentWeapon.Weapon_Atk_Sound);
+                                CurrentWeapon.Round -= 1;
+                                Attackable = false;
+                                Invoke("AttackableOn", CurrentWeapon.AttackSpeed);
+                                Instantiate(CurrentWeapon.BulletPrefab, FirePos.position, Quaternion.AngleAxis(angle - 90, Vector3.forward));
+                            }
+
+                        }
+                    }
+                    else if (CurrentWeapon.weaponTypes == Weapons.WeaponTypes.TwohandAutoGun)
+                    {
+                        Vector2 MousePos = Input.mousePosition;
+                        Debug.Log(MousePos);
+                        FSM.Anim.SetBool("isWalk", false);
+
+                        CurrentWeapon.BulletSetting(); //weapon의 BulletSetting로 발사하는 탄환의 대미지, 탄속 등 설정
+                        FSM.Anim.SetBool("isTwohandGun", true);
+                        if (Attackable == true)
+                        {
+                            if (CurrentWeapon.Round > 0)
+                            {
+                                SoundManager.SharedInstance.PlaySE(CurrentWeapon.Weapon_Atk_Sound);
+                                CurrentWeapon.Round -= 1;
+                                Attackable = false;
+                                Invoke("AttackableOn", CurrentWeapon.AttackSpeed);
+                                Instantiate(CurrentWeapon.BulletPrefab, FirePos.position, Quaternion.AngleAxis(angle - 90, Vector3.forward));
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            if (Input.GetMouseButton(1))
             {
                 if(FSM.WeaponShow == true)
                 {

@@ -31,7 +31,9 @@ public class Weapons : MonoBehaviour
         Onehand,
         Twohand,
         OnehandGun,
+        OnehandAutoGun,
         TwohandGun,
+        TwohandAutoGun,
         DoubleGun,
         Gun_Tlet,
         HeavyArms

@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2417831153892202762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498363205244101970}
+  m_Layer: 0
+  m_Name: DamageHud
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &498363205244101970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2417831153892202762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8940788074999216995}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3475286351683159690
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,12 +73,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3475286351683159690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d53fb28c0fbcfcc459b90cc0218575ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 18465f4d469024b4fac37ca5fa1bb07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DebugMode: 1
   horizontalViewAngle: 75
-  ViewRadius: 5
+  ViewRadius: 7
   ViewRotateZ: 0
   TargetMask:
     serializedVersion: 2
@@ -55,7 +86,7 @@ MonoBehaviour:
   ObstacleMask:
     serializedVersion: 2
     m_Bits: 64
-  Chase: {fileID: 1465682077417867550}
+  Chase: {fileID: 0}
   target: {fileID: 0}
   Attention: 0
 --- !u!58 &471866529153017363
@@ -110,6 +141,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1377993753636446321}
+  - {fileID: 498363205244101970}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -237,15 +269,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7205854440793691262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2d601ebb07a284da6c3cc8eed70f08, type: 3}
+  m_Script: {fileID: 11500000, guid: c44afce0542f25042ad9815061de912f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 40
-  Maxhp: 40
-  Armor: 0
+  hp: 35
+  Maxhp: 35
+  Armor: 1
   Damage: 8
-  Exp: 0
-  MovementSpeed: 0
+  Exp: 10
+  MovementSpeed: 4
   isHit: 0
   player: {fileID: 0}
   DropItemPrefab:
@@ -254,7 +286,7 @@ MonoBehaviour:
   - {fileID: 4264891239229971489, guid: 78197a16b34c3d94bb0bc35c68c987fb, type: 3}
   UnconditionalDropItemPrefab: {fileID: 1289705932527266958, guid: 3ac7cc0133b632145bf3b16c97297000, type: 3}
   DamageText: {fileID: 3274424263782686079, guid: d548393525d81d243938aac49f692ef5, type: 3}
-  textPos: {fileID: 8940788074999216995}
+  textPos: {fileID: 498363205244101970}
   rand: 0
   DropCount: 0
   targetTransform: {fileID: 0}

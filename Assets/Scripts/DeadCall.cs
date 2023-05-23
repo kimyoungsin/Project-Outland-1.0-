@@ -12,6 +12,7 @@ public class DeadCall : MonoBehaviour
     public bool isTalk;
     public bool isTalking = false;
 
+
     public GameObject AmbushEnemy;
     public Transform AmbushEnemyTransform;
 
@@ -31,7 +32,9 @@ public class DeadCall : MonoBehaviour
                 {
                     isTalking = true;
                     Instantiate(AmbushEnemy, AmbushEnemyTransform.position, Quaternion.identity);
+
                 }
+                   
             }
 
         }

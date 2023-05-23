@@ -164,14 +164,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0323146f0ad0b4583a2abdd47fe88f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NPCName: "\uC2DC\uBBFC"
-  DialogueStartCount: 64
+  NPCName: "\uAC70\uC9C0"
+  DialogueStartCount: 66
   HP: 0
   Armor: 0
   Speed: 0
   isTalk: 0
   isTalking: 0
   isenemy: 0
+  quest: {fileID: 0}
 --- !u!95 &7378907960483954216
 Animator:
   serializedVersion: 4

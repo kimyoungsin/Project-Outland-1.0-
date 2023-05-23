@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: H6_Boltloader
   m_EditorClassIdentifier: 
   ID: 105
-  weaponTypes: 6
+  weaponTypes: 7
   itemName: "H6\uBCFC\uD2B8\uB85C\uB354"
   itemType: 0
   itemImage: {fileID: 21300000, guid: 695c2ddf42629fc4e958fd4b16485705, type: 3}
