@@ -230,7 +230,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.25
+  m_Radius: 1.5
 --- !u!114 &1825011360778762573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,6 +257,8 @@ MonoBehaviour:
   Fadeinout: {fileID: 0}
   FadeObj: {fileID: 2618861937770777886, guid: 8dd238823fd9378409095cacda960bee, type: 3}
   vcam: {fileID: 0}
+  eventmanager: {fileID: 0}
+  AmbushEnemys: []
 --- !u!95 &1825011360778762566
 Animator:
   serializedVersion: 4

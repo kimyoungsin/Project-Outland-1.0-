@@ -117,6 +117,7 @@ public class Enemy_Chase : MonoBehaviour
         AlertSpeed = 0f;
         targetTransform = null;
         FOV.target = null;
+        FOV.Attention = false;
         Warning = false;
         animator.SetBool("isChase", false);
     }

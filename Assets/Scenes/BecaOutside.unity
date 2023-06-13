@@ -9350,6 +9350,8 @@ MonoBehaviour:
   Fadeinout: {fileID: 0}
   FadeObj: {fileID: 0}
   vcam: {fileID: 0}
+  eventmanager: {fileID: 0}
+  AmbushEnemys: []
 --- !u!58 &1301210373
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9466,6 +9468,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1825011359912569941, guid: ba8f26ebc6461fc4db0c89d80c8ab7d4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825011359912569941, guid: ba8f26ebc6461fc4db0c89d80c8ab7d4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1825011360778762560, guid: ba8f26ebc6461fc4db0c89d80c8ab7d4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9513,6 +9523,10 @@ PrefabInstance:
     - target: {fileID: 1825011360778762568, guid: ba8f26ebc6461fc4db0c89d80c8ab7d4, type: 3}
       propertyPath: m_Name
       value: BecaGang_Keeper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825011360778762572, guid: ba8f26ebc6461fc4db0c89d80c8ab7d4, type: 3}
+      propertyPath: m_Radius
+      value: 1.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba8f26ebc6461fc4db0c89d80c8ab7d4, type: 3}

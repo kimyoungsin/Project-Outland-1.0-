@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class FieldOfView : MonoBehaviour
 {
-    [SerializeField] private bool DebugMode = false;
-    [Header("View Config")]
-    [Range(0f, 360f)] 
-    [SerializeField] private float horizontalViewAngle = 0f;
-    [SerializeField] private float ViewRadius = 1f;
-    [Range(-180f, 180f)]
-    [SerializeField] private float ViewRotateZ = 0f;
-    [SerializeField] private LayerMask TargetMask;
-    [SerializeField] private LayerMask ObstacleMask;
+    [SerializeField] private bool DebugMode = false; //ON 이면 기즈모 켤시 범위 보임
+    [Header("뷰 설정")]
+    [Range(0f, 360f)]  //아래 파랑색 선 범위 최소~최대값 설정
+    [SerializeField] private float horizontalViewAngle = 0f; //부채꼴 범위 내부 파랑색 선 2개 각도조절
+    [SerializeField] private float ViewRadius = 1f; //시야범위
+    [Range(-180f, 180f)] //아래 뷰 회전각 최소~최대 범위 설정
+    [SerializeField] private float ViewRotateZ = 0f; //뷰 부채꼴 범위 회전용
+    [SerializeField] private LayerMask TargetMask; //부채꼴 내부 추적할 대상 레이어 설정
+    [SerializeField] private LayerMask ObstacleMask; //부채꼴 내부 가려지는 레이어 설정
 
     private List<Collider2D> hitedTargetContainer = new List<Collider2D>();
     private float horizontalViewHalfAngle = 0f;
